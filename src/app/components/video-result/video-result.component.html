@@ -1,0 +1,74 @@
+@if (data) {
+<div class="result-card" role="region" aria-label="Download ready">
+
+  <!-- Header row -->
+  <div class="result-header">
+    <div class="result-status">
+      <span class="status-dot" aria-hidden="true"></span>
+      <span class="status-text">Ready to download</span>
+    </div>
+    <app-platform-badge [platform]="data.platform"></app-platform-badge>
+  </div>
+
+  <!-- Body -->
+  <div class="result-body">
+
+    <!-- Thumbnail -->
+    <div class="thumb-wrap" aria-hidden="true">
+      <img [src]="data.thumbnail" [alt]="data.title" loading="lazy" />
+      <div class="thumb-overlay">
+        <div class="thumb-play">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info + Actions -->
+    <div class="result-info">
+      <p class="result-title" [title]="data.title">{{ data.title }}</p>
+
+      <div class="result-meta">
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2 4 6v6c0 5 3.4 9.3 8 10 4.6-.7 8-5 8-10V6l-8-4z"/>
+          </svg>
+          No Watermark
+        </span>
+        <span class="meta-chip">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+          HD Quality
+        </span>
+      </div>
+
+      <div class="result-actions">
+        <button class="btn-download"
+                (click)="onDownload()"
+                [disabled]="!processed"
+                aria-label="Download video">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3v12M6 11l6 6 6-6M5 21h14"/>
+          </svg>
+          Download Video
+        </button>
+
+        <button class="btn-reset" (click)="reset.emit()" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+            <path d="M3 3v5h5"/>
+          </svg>
+          Try another video
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+}

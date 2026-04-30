@@ -1,0 +1,291 @@
+<main class="page">
+
+  <!-- ── Navbar ──────────────────────────────────────────────────────────── -->
+  <header class="navbar-shell">
+    <div class="navbar-inner">
+      <a class="brand" href="/" aria-label="Clipzy home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v12"/>
+            <path d="M6 11l6 6 6-6"/>
+            <path d="M5 21h14"/>
+          </svg>
+        </span>
+        <span class="brand-name">Clipzy</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#how-to" class="nav-link">How To</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Hero ────────────────────────────────────────────────────────────── -->
+  @if (!hasResult() && !loading()) {
+  <section class="hero" aria-label="Video downloader">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-badge" role="note">
+      <span class="hero-badge-dot" aria-hidden="true"></span>
+      100% Free &bull; No Watermark &bull; No Account Needed
+    </div>
+
+    <h1 class="hero-title">
+      Download Videos<br>
+      <span class="grad">Without Watermark</span>
+    </h1>
+
+    <p class="hero-sub">
+      Paste a link from TikTok, YouTube, Instagram, or Snapchat.
+      Your video downloads in seconds — clean, fast, and completely free.
+    </p>
+
+    <div class="how-steps" aria-label="How it works">
+      <div class="step">
+        <span class="step-num" aria-hidden="true">1</span>
+        <span>Paste link</span>
+      </div>
+      <span class="step-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </span>
+      <div class="step">
+        <span class="step-num" aria-hidden="true">2</span>
+        <span>Click download</span>
+      </div>
+      <span class="step-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </span>
+      <div class="step">
+        <span class="step-num" aria-hidden="true">3</span>
+        <span>Save video</span>
+      </div>
+    </div>
+
+    <!-- Input card -->
+    <div class="input-card">
+      <app-video-input [loading]="loading()" (process)="onProcess($event)"></app-video-input>
+
+      @if (error()) {
+        <div class="error-alert" role="alert" aria-live="assertive">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 8v4M12 16h.01"/>
+          </svg>
+          <span>{{ error() }}</span>
+        </div>
+      }
+    </div>
+
+    <!-- Supported platforms -->
+    <div class="platform-row" aria-label="Supported platforms">
+      @for (p of supported(); track p.name) {
+        <span class="platform-chip" [style.--c]="p.color">{{ p.name }}</span>
+      }
+    </div>
+  </section>
+  }
+
+  <!-- ── Result / Loader ─────────────────────────────────────────────────── -->
+  <section class="result-section" aria-live="polite">
+    @if (loading()) {
+      <app-loader [label]="loaderLabel()"></app-loader>
+    } @else if (hasResult()) {
+      <app-video-result
+        [data]="result()"
+        [processed]="hasResult()"
+        (reset)="onReset()">
+      </app-video-result>
+    }
+  </section>
+
+  <!-- ── Ad slot ─────────────────────────────────────────────────────────── -->
+  <div class="ad-slot" aria-label="Advertisement" role="complementary"></div>
+
+  <!-- ── About / How-to ─────────────────────────────────────────────────── -->
+  <section class="about-section" id="how-to" aria-labelledby="about-title">
+    <div class="about-inner">
+      <div class="section-tag">About Clipzy</div>
+      <h2 class="section-title" id="about-title">
+        Download TikTok Videos <span class="grad">Without Watermark</span> for Free
+      </h2>
+      <p class="section-desc">
+        Clipzy is a fast, browser-based video downloader. Paste any link and your video is ready in
+        seconds — no software, no account, no watermark. All processing happens on our servers so
+        it works on any device including iPhone, Android, PC and Mac.
+      </p>
+
+      <div class="key-features-card">
+        <p class="kf-label">Key features</p>
+        <ul class="kf-list">
+          <li>No watermark — download TikTok videos in original quality without any logo overlay.</li>
+          <li>Works on any device: iPhone, Android, Windows, Mac, or tablet.</li>
+          <li>100% browser-based — nothing to install or sign up for.</li>
+          <li>Always free. A small number of ads help keep the service running.</li>
+          <li>More platforms coming: YouTube, Instagram, Snapchat, and Pinterest.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Features grid ───────────────────────────────────────────────────── -->
+  <section class="features-section" id="features" aria-labelledby="features-title">
+    <div class="section-tag">Why Clipzy</div>
+    <h2 class="section-title" id="features-title">Everything You Need, Nothing You Don't</h2>
+
+    <div class="features-grid">
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #6366F1; --ic-bg: #EEF2FF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2 4 6v6c0 5 3.4 9.3 8 10 4.6-.7 8-5 8-10V6l-8-4z"/>
+          </svg>
+        </div>
+        <h3>No Watermark</h3>
+        <p>Download TikTok videos in their original quality without any watermark or logo overlay — ever.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #8B5CF6; --ic-bg: #F5F3FF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/>
+          </svg>
+        </div>
+        <h3>Lightning Fast</h3>
+        <p>Our optimized processing pipeline fetches and delivers your video in seconds, not minutes.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #10B981; --ic-bg: #ECFDF5">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="5" y="2" width="14" height="20" rx="2"/>
+            <path d="M12 18h.01"/>
+          </svg>
+        </div>
+        <h3>All Devices</h3>
+        <p>Works on iPhone, Android, Windows, and Mac — any modern browser, no app required.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #F59E0B; --ic-bg: #FFFBEB">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <h3>Always Free</h3>
+        <p>No subscriptions, no paywalls, no hidden fees. Clipzy is free to use and always will be.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #EF4444; --ic-bg: #FEF2F2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <h3>No Account</h3>
+        <p>No signup, no login, no email. Just paste the link and your download starts immediately.</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #06B6D4; --ic-bg: #ECFEFF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>HD Quality</h3>
+        <p>We preserve the original video quality. No compression, no re-encoding, no quality loss.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── FAQ ─────────────────────────────────────────────────────────────── -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="section-tag">FAQ</div>
+    <h2 class="section-title" id="faq-title">
+      Frequently Asked <span class="grad">Questions</span>
+    </h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>How do I download TikTok videos without a watermark?</summary>
+        <div class="faq-body">
+          <ol>
+            <li>Open TikTok on your phone or browser and find the video you want.</li>
+            <li>Tap the <strong>Share</strong> button, then tap <strong>Copy Link</strong>.</li>
+            <li>Come back to Clipzy and paste the link into the input field above.</li>
+            <li>Click <strong>Download</strong> and wait a moment while we process it.</li>
+            <li>Save the clean, watermark-free video to your device.</li>
+          </ol>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I get the TikTok video link?</summary>
+        <div class="faq-body">
+          <p>Open the TikTok app, find your video, tap the <strong>Share</strong> icon, and choose <strong>Copy Link</strong>. The URL is now on your clipboard — paste it into the field above and hit Download.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Where are downloaded videos saved on my device?</summary>
+        <div class="faq-body">
+          <p>Your browser saves videos to its default downloads folder. On mobile, files usually appear in your <strong>Photos</strong> or <strong>Downloads</strong> app depending on your device and browser settings.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does Clipzy store a copy of my downloaded videos?</summary>
+        <div class="faq-body">
+          <p>No. Clipzy processes each request on-the-fly and delivers the file directly to your device. We do not store, cache, or retain any copy of the videos you download.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Do I need to install anything or create an account?</summary>
+        <div class="faq-body">
+          <p>No. Clipzy is entirely browser-based. No extensions, no apps, no account required — just paste the link and download.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is Clipzy completely free?</summary>
+        <div class="faq-body">
+          <p>Yes, completely free. We display a small number of ads to keep the service running. No subscriptions, no hidden fees, no limits.</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ── Footer ──────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <span class="brand-icon small" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v12"/>
+          <path d="M6 11l6 6 6-6"/>
+          <path d="M5 21h14"/>
+        </svg>
+      </span>
+      <span class="brand-name">Clipzy</span>
+    </div>
+    <p class="footer-tagline">Free video downloader — no watermark, no signup, no fuss.</p>
+    <p class="footer-copy">&copy; 2025 Clipzy. All rights reserved.</p>
+  </footer>
+
+</main>

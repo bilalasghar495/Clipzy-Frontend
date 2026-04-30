@@ -1,0 +1,73 @@
+<form class="url-form" (ngSubmit)="submit()" novalidate>
+
+  <!-- Custom input row: field + paste/clear -->
+  <div class="url-field-row">
+    <input
+      type="text"
+      class="url-input"
+      [(ngModel)]="value"
+      (ngModelChange)="onValueChange($event)"
+      name="videoUrl"
+      placeholder="Paste video link here..."
+      autocomplete="off"
+      spellcheck="false"
+      aria-label="Video URL"
+      [disabled]="loading"
+    />
+
+    @if (value) {
+      <button class="url-side-btn url-clear-btn"
+              type="button"
+              (click)="clear()"
+              aria-label="Clear input">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 6 6 18M6 6l12 12"/>
+        </svg>
+        Clear
+      </button>
+    } @else {
+      <button class="url-side-btn url-paste-btn"
+              type="button"
+              (click)="paste()"
+              aria-label="Paste from clipboard">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="9" y="2" width="6" height="4" rx="1"/>
+          <path d="M17 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+          <path d="M9 12h6M9 16h4"/>
+        </svg>
+        Paste
+      </button>
+    }
+  </div>
+
+  <!-- Platform detection hint -->
+  @if (detected) {
+    <div class="platform-hint">
+      <span class="platform-hint-dot" [style.background]="detected.color"></span>
+      {{ detected.name }} link detected
+    </div>
+  }
+
+  <!-- Download button — fully separate, full-width -->
+  <button type="submit"
+          class="url-download-btn"
+          [disabled]="loading || !value.trim()"
+          aria-label="Download video">
+    @if (loading) {
+      <span class="btn-dot"></span>
+      <span class="btn-dot"></span>
+      <span class="btn-dot"></span>
+    } @else {
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 3v12"/>
+        <path d="M6 11l6 6 6-6"/>
+        <path d="M5 21h14"/>
+      </svg>
+      Download Free
+    }
+  </button>
+
+</form>

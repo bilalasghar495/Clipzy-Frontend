@@ -1,0 +1,130 @@
+/* ── Design Tokens ───────────────────────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg:            #F9FAFB;
+  --bg-subtle:     #F3F4F6;
+  --surface:       #FFFFFF;
+
+  /* Brand — Modern Indigo/Violet (Linear-inspired) */
+  --primary:       #6366F1;
+  --primary-dark:  #4F46E5;
+  --primary-hover: #4338CA;
+  --primary-light: #EEF2FF;
+  --violet:        #8B5CF6;
+  --violet-light:  #F5F3FF;
+  --emerald:       #10B981;
+  --emerald-light: #ECFDF5;
+
+  /* Text */
+  --text:          #111827;
+  --text-dim:      #6B7280;
+  --text-faint:    #9CA3AF;
+
+  /* Borders */
+  --border:        #E5E7EB;
+  --border-strong: #D1D5DB;
+
+  /* Gradients */
+  --grad:      linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+  --grad-cta:  linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+  --grad-warm: linear-gradient(135deg, #059669 0%, #10B981 100%);
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0,0,0,.04);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+  --shadow:    0 4px 8px rgba(0,0,0,.07), 0 2px 4px rgba(0,0,0,.05);
+  --shadow-md: 0 10px 25px rgba(0,0,0,.09), 0 4px 6px rgba(0,0,0,.05);
+  --shadow-lg: 0 25px 50px rgba(0,0,0,.10), 0 10px 20px rgba(0,0,0,.05);
+  --shadow-primary: 0 8px 30px rgba(99,102,241,.30);
+  --shadow-input: 0 0 0 3px rgba(99,102,241,.12);
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius:    14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+}
+
+/* ── Reset & Base ────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+button { font-family: inherit; cursor: pointer; }
+input  { font-family: inherit; }
+
+/* ── Accent bar at very top ──────────────────────────────────────────────── */
+body::before {
+  content: '';
+  display: block;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--grad);
+  z-index: 9999;
+}
+
+/* ── Bootstrap Overrides ─────────────────────────────────────────────────── */
+.form-control {
+  font-family: 'Inter', system-ui, sans-serif;
+
+  &:focus {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-input);
+  }
+
+  &::placeholder { color: var(--text-faint); }
+}
+
+/* ── Keyframes ───────────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -600px 0; }
+  100% { background-position:  600px 0; }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1);   opacity: 1; }
+  50%       { transform: scale(1.4); opacity: .7; }
+}
+
+@keyframes progress-indeterminate {
+  0%   { left: -40%; width: 40%; }
+  60%  { left: 100%; width: 40%; }
+  100% { left: 100%; width: 40%; }
+}
+
+@keyframes orbit {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes bounce-dot {
+  0%, 80%, 100% { transform: scale(.8);   opacity: .4; }
+  40%           { transform: scale(1.15); opacity: 1;  }
+}

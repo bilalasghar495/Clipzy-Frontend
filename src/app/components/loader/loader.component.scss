@@ -1,0 +1,99 @@
+.loader-shell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  padding: 64px 24px;
+  animation: fadeUp .4s cubic-bezier(.22,1,.36,1) both;
+}
+
+/* ── Rings ───────────────────────────────────────────────────────────────── */
+.loader-rings {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.ring-outer {
+  inset: 0;
+  border-width: 3px;
+  border-top-color: var(--primary);
+  border-right-color: rgba(99,102,241,.3);
+  animation: orbit .9s linear infinite;
+}
+
+.ring-mid {
+  inset: 10px;
+  border-width: 2px;
+  border-bottom-color: var(--violet);
+  border-left-color: rgba(139,92,246,.25);
+  animation: orbit .7s linear infinite reverse;
+}
+
+.ring-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+
+  svg { width: 18px; height: 18px; }
+}
+
+/* ── Text content ────────────────────────────────────────────────────────── */
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  max-width: 360px;
+}
+
+.loader-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+  text-align: center;
+  letter-spacing: -.01em;
+}
+
+/* ── Progress bar ────────────────────────────────────────────────────────── */
+.loader-track {
+  width: 100%;
+  height: 4px;
+  background: var(--bg-subtle);
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.loader-fill {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--grad);
+  animation: progress-indeterminate 1.8s ease-in-out infinite;
+}
+
+.loader-hint {
+  font-size: 13px;
+  color: var(--text-faint);
+  margin: 0;
+  text-align: center;
+}
