@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "howTo": "How To",
+    "features": "Features",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "badge": "100% Free • No Watermark • No Account Needed",
+    "title": "Download Videos",
+    "titleGrad": "Without Watermark",
+    "subtitle": "Paste a link from TikTok, YouTube, Instagram, or Snapchat. Your video downloads in seconds — clean, fast, and completely free.",
+    "step1": "Paste link",
+    "step2": "Click download",
+    "step3": "Save video"
+  },
+  "input": {
+    "placeholder": "Paste video link here...",
+    "clear": "Clear",
+    "paste": "Paste",
+    "download": "Download Free",
+    "detected": "{{ platform }} link detected"
+  },
+  "loader": {
+    "waiting": "Video queued, waiting to process...",
+    "processing": "Downloading and removing watermark...",
+    "default": "Processing video...",
+    "hint": "Usually takes 5 – 15 seconds"
+  },
+  "result": {
+    "ready": "Ready to download",
+    "noWatermark": "No Watermark",
+    "hdQuality": "HD Quality",
+    "download": "Download Video",
+    "tryAnother": "Try another video"
+  },
+  "about": {
+    "tag": "About Clipzy",
+    "title1": "Download TikTok Videos",
+    "titleGrad": "Without Watermark",
+    "title2": "for Free",
+    "desc": "Clipzy is a fast, browser-based video downloader. Paste any link and your video is ready in seconds — no software, no account, no watermark. All processing happens on our servers so it works on any device including iPhone, Android, PC and Mac.",
+    "keyFeatures": "Key features",
+    "kf1": "No watermark — download TikTok videos in original quality without any logo overlay.",
+    "kf2": "Works on any device: iPhone, Android, Windows, Mac, or tablet.",
+    "kf3": "100% browser-based — nothing to install or sign up for.",
+    "kf4": "Always free. A small number of ads help keep the service running.",
+    "kf5": "More platforms coming: YouTube, Instagram, Snapchat, and Pinterest."
+  },
+  "features": {
+    "tag": "Why Clipzy",
+    "title": "Everything You Need, Nothing You Don't",
+    "noWatermark": {
+      "title": "No Watermark",
+      "desc": "Download TikTok videos in their original quality without any watermark or logo overlay — ever."
+    },
+    "fast": {
+      "title": "Lightning Fast",
+      "desc": "Our optimized processing pipeline fetches and delivers your video in seconds, not minutes."
+    },
+    "devices": {
+      "title": "All Devices",
+      "desc": "Works on iPhone, Android, Windows, and Mac — any modern browser, no app required."
+    },
+    "free": {
+      "title": "Always Free",
+      "desc": "No subscriptions, no paywalls, no hidden fees. Clipzy is free to use and always will be."
+    },
+    "noAccount": {
+      "title": "No Account",
+      "desc": "No signup, no login, no email. Just paste the link and your download starts immediately."
+    },
+    "hdQuality": {
+      "title": "HD Quality",
+      "desc": "We preserve the original video quality. No compression, no re-encoding, no quality loss."
+    }
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Frequently Asked",
+    "titleGrad": "Questions",
+    "q1": {
+      "q": "How do I download TikTok videos without a watermark?",
+      "a": "Open TikTok and find the video. Tap Share, then Copy Link. Paste the link into Clipzy above, click Download, and save the clean watermark-free video to your device."
+    },
+    "q2": {
+      "q": "How do I get the TikTok video link?",
+      "a": "Open the TikTok app, find your video, tap the Share icon, and choose Copy Link. The URL is now on your clipboard — paste it into the field above and hit Download."
+    },
+    "q3": {
+      "q": "Where are downloaded videos saved on my device?",
+      "a": "Your browser saves videos to its default downloads folder. On mobile, files usually appear in your Photos or Downloads app depending on your device and browser settings."
+    },
+    "q4": {
+      "q": "Does Clipzy store a copy of my downloaded videos?",
+      "a": "No. Clipzy processes each request on-the-fly and delivers the file directly to your device. We do not store, cache, or retain any copy of the videos you download."
+    },
+    "q5": {
+      "q": "Do I need to install anything or create an account?",
+      "a": "No. Clipzy is entirely browser-based. No extensions, no apps, no account required — just paste the link and download."
+    },
+    "q6": {
+      "q": "Is Clipzy completely free?",
+      "a": "Yes, completely free. We display a small number of ads to keep the service running. No subscriptions, no hidden fees, no limits."
+    }
+  },
+  "footer": {
+    "tagline": "Free video downloader — no watermark, no signup, no fuss.",
+    "copyright": "© 2025 Clipzy. All rights reserved."
+  },
+  "errors": {
+    "invalidUrl": "Please enter a valid video URL.",
+    "unsupportedPlatform": "Unsupported platform. Try TikTok, YouTube, Instagram, Snapchat, or Pinterest.",
+    "timeout": "Processing timed out. Please try again.",
+    "failed": "Processing failed. Please try again.",
+    "generic": "Failed to process video. Please try again."
+  }
+}

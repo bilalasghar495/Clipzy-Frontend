@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "howTo": "Comment ça marche",
+    "features": "Fonctionnalités",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "badge": "100% Gratuit • Sans Filigrane • Sans Compte",
+    "title": "Téléchargez des Vidéos",
+    "titleGrad": "Sans Filigrane",
+    "subtitle": "Collez un lien depuis TikTok, YouTube, Instagram ou Snapchat. Votre vidéo se télécharge en quelques secondes — propre, rapide et totalement gratuit.",
+    "step1": "Coller le lien",
+    "step2": "Cliquer télécharger",
+    "step3": "Enregistrer la vidéo"
+  },
+  "input": {
+    "placeholder": "Collez le lien vidéo ici...",
+    "clear": "Effacer",
+    "paste": "Coller",
+    "download": "Télécharger Gratuitement",
+    "detected": "Lien {{ platform }} détecté"
+  },
+  "loader": {
+    "waiting": "Vidéo en file d'attente, traitement en cours...",
+    "processing": "Téléchargement et suppression du filigrane...",
+    "default": "Traitement de la vidéo...",
+    "hint": "Prend généralement 5 à 15 secondes"
+  },
+  "result": {
+    "ready": "Prêt à télécharger",
+    "noWatermark": "Sans Filigrane",
+    "hdQuality": "Qualité HD",
+    "download": "Télécharger la Vidéo",
+    "tryAnother": "Essayer une autre vidéo"
+  },
+  "about": {
+    "tag": "À propos de Clipzy",
+    "title1": "Téléchargez des Vidéos TikTok",
+    "titleGrad": "Sans Filigrane",
+    "title2": "Gratuitement",
+    "desc": "Clipzy est un téléchargeur de vidéos rapide basé sur le navigateur. Collez n'importe quel lien et votre vidéo est prête en quelques secondes — sans logiciel, sans compte, sans filigrane.",
+    "keyFeatures": "Fonctionnalités clés",
+    "kf1": "Sans filigrane — téléchargez des vidéos TikTok en qualité originale sans logo.",
+    "kf2": "Fonctionne sur tous les appareils : iPhone, Android, Windows, Mac ou tablette.",
+    "kf3": "100% basé sur le navigateur — rien à installer ni à s'inscrire.",
+    "kf4": "Toujours gratuit. Quelques publicités aident à maintenir le service.",
+    "kf5": "D'autres plateformes arrivent : YouTube, Instagram, Snapchat et Pinterest."
+  },
+  "features": {
+    "tag": "Pourquoi Clipzy",
+    "title": "Tout ce dont vous avez besoin, rien de plus",
+    "noWatermark": {
+      "title": "Sans Filigrane",
+      "desc": "Téléchargez des vidéos TikTok dans leur qualité originale sans aucun filigrane ni logo — jamais."
+    },
+    "fast": {
+      "title": "Ultra Rapide",
+      "desc": "Notre pipeline de traitement optimisé récupère et livre votre vidéo en quelques secondes, pas des minutes."
+    },
+    "devices": {
+      "title": "Tous les Appareils",
+      "desc": "Fonctionne sur iPhone, Android, Windows et Mac — n'importe quel navigateur moderne, sans application."
+    },
+    "free": {
+      "title": "Toujours Gratuit",
+      "desc": "Pas d'abonnements, pas de paywalls, pas de frais cachés. Clipzy est gratuit et le sera toujours."
+    },
+    "noAccount": {
+      "title": "Sans Compte",
+      "desc": "Pas d'inscription, pas de connexion, pas d'email. Collez simplement le lien et le téléchargement commence."
+    },
+    "hdQuality": {
+      "title": "Qualité HD",
+      "desc": "Nous préservons la qualité vidéo originale. Pas de compression, pas de réencodage, pas de perte de qualité."
+    }
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Questions",
+    "titleGrad": "Fréquentes",
+    "q1": {
+      "q": "Comment télécharger des vidéos TikTok sans filigrane ?",
+      "a": "Ouvrez TikTok et trouvez la vidéo. Appuyez sur Partager, puis sur Copier le lien. Collez le lien dans Clipzy ci-dessus, cliquez sur Télécharger et enregistrez la vidéo propre sur votre appareil."
+    },
+    "q2": {
+      "q": "Comment obtenir le lien d'une vidéo TikTok ?",
+      "a": "Ouvrez l'application TikTok, trouvez votre vidéo, appuyez sur l'icône Partager et choisissez Copier le lien. L'URL est maintenant dans votre presse-papiers — collez-la dans le champ ci-dessus."
+    },
+    "q3": {
+      "q": "Où sont sauvegardées les vidéos téléchargées sur mon appareil ?",
+      "a": "Votre navigateur enregistre les vidéos dans son dossier de téléchargements par défaut. Sur mobile, les fichiers apparaissent généralement dans votre application Photos ou Téléchargements."
+    },
+    "q4": {
+      "q": "Clipzy conserve-t-il une copie de mes vidéos téléchargées ?",
+      "a": "Non. Clipzy traite chaque demande à la volée et livre le fichier directement sur votre appareil. Nous ne stockons ni ne conservons aucune copie des vidéos que vous téléchargez."
+    },
+    "q5": {
+      "q": "Dois-je installer quoi que ce soit ou créer un compte ?",
+      "a": "Non. Clipzy est entièrement basé sur le navigateur. Pas d'extensions, pas d'applications, pas de compte requis — collez simplement le lien et téléchargez."
+    },
+    "q6": {
+      "q": "Clipzy est-il totalement gratuit ?",
+      "a": "Oui, totalement gratuit. Nous affichons quelques publicités pour maintenir le service. Pas d'abonnements, pas de frais cachés, pas de limites."
+    }
+  },
+  "footer": {
+    "tagline": "Téléchargeur de vidéos gratuit — sans filigrane, sans inscription, sans tracas.",
+    "copyright": "© 2025 Clipzy. Tous droits réservés."
+  },
+  "errors": {
+    "invalidUrl": "Veuillez entrer une URL vidéo valide.",
+    "unsupportedPlatform": "Plateforme non supportée. Essayez TikTok, YouTube, Instagram, Snapchat ou Pinterest.",
+    "timeout": "Délai de traitement dépassé. Veuillez réessayer.",
+    "failed": "Traitement échoué. Veuillez réessayer.",
+    "generic": "Impossible de traiter la vidéo. Veuillez réessayer."
+  }
+}

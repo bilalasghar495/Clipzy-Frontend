@@ -61,15 +61,13 @@ export class VideoDownloaderService {
 
   process(url: string): void {
     if (!this.isValidUrl(url)) {
-      this.error.set('Please enter a valid video URL.');
+      this.error.set('errors.invalidUrl');
       return;
     }
 
     const platform = this.detectPlatform(url);
     if (platform === 'unknown') {
-      this.error.set(
-        'Unsupported platform. Try TikTok, YouTube, Instagram, Snapchat, or Pinterest.'
-      );
+      this.error.set('errors.unsupportedPlatform');
       return;
     }
 
@@ -82,7 +80,7 @@ export class VideoDownloaderService {
 
     // Errors after 60 s if the job hasn't completed
     const timeout$ = timer(60_000).pipe(
-      switchMap(() => throwError(() => new Error('Processing timed out. Please try again.')))
+      switchMap(() => throwError(() => new Error('errors.timeout')))
     );
 
     const job$ = this.dl.startDownload(url).pipe(
@@ -98,7 +96,7 @@ export class VideoDownloaderService {
       ),
       switchMap(finalStatus => {
         if (finalStatus.status === 'failed') {
-          return throwError(() => new Error('Processing failed. Please try again.'));
+          return throwError(() => new Error('errors.failed'));
         }
         return this.dl.getResult(finalStatus.jobId);
       }),
@@ -117,7 +115,7 @@ export class VideoDownloaderService {
         this.jobStatus.set('completed');
       },
       error: (err: Error) => {
-        this.error.set(err.message || 'Failed to process video. Please try again.');
+        this.error.set(err.message || 'errors.generic');
         this.loading.set(false);
         this.jobStatus.set('failed');
       },

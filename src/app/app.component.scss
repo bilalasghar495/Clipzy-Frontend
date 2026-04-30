@@ -87,6 +87,119 @@
   }
 }
 
+/* ── Language dropdown ───────────────────────────────────────────────────── */
+.lang-dropdown {
+  position: relative;
+
+  &:hover .lang-menu,
+  &:focus-within .lang-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  &:hover .lang-chevron {
+    transform: rotate(180deg);
+  }
+}
+
+.lang-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.lang-globe {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.lang-chevron {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  transition: transform .2s;
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: 380px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 40px rgba(0,0,0,.13);
+  padding: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity .18s, visibility .18s, transform .18s;
+  pointer-events: none;
+  z-index: 200;
+}
+
+.lang-menu-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin: 0 0 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.lang-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.lang-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background .12s;
+  font-size: 13px;
+  color: var(--text);
+
+  &:hover { background: var(--bg-subtle); }
+
+  &.active {
+    color: var(--primary);
+    font-weight: 600;
+  }
+}
+
+.lang-flag { font-size: 17px; flex-shrink: 0; line-height: 1; }
+
+.lang-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lang-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 13px;
+  padding: 20px;
+}
+
 @media (max-width: 600px) { .nav-links { display: none; } }
 
 /* ── Shared section typography ───────────────────────────────────────────── */

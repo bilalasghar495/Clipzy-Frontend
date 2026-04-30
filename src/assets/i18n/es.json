@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "howTo": "Cómo funciona",
+    "features": "Características",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "badge": "100% Gratis • Sin Marca de Agua • Sin Cuenta",
+    "title": "Descarga Videos",
+    "titleGrad": "Sin Marca de Agua",
+    "subtitle": "Pega un enlace de TikTok, YouTube, Instagram o Snapchat. Tu video se descarga en segundos — limpio, rápido y completamente gratis.",
+    "step1": "Pega el enlace",
+    "step2": "Haz clic en descargar",
+    "step3": "Guarda el video"
+  },
+  "input": {
+    "placeholder": "Pega el enlace del video aquí...",
+    "clear": "Borrar",
+    "paste": "Pegar",
+    "download": "Descargar Gratis",
+    "detected": "Enlace de {{ platform }} detectado"
+  },
+  "loader": {
+    "waiting": "Video en cola, esperando procesamiento...",
+    "processing": "Descargando y eliminando marca de agua...",
+    "default": "Procesando video...",
+    "hint": "Generalmente tarda 5 – 15 segundos"
+  },
+  "result": {
+    "ready": "Listo para descargar",
+    "noWatermark": "Sin Marca de Agua",
+    "hdQuality": "Calidad HD",
+    "download": "Descargar Video",
+    "tryAnother": "Probar otro video"
+  },
+  "about": {
+    "tag": "Sobre Clipzy",
+    "title1": "Descarga Videos de TikTok",
+    "titleGrad": "Sin Marca de Agua",
+    "title2": "Gratis",
+    "desc": "Clipzy es un descargador de videos rápido basado en el navegador. Pega cualquier enlace y tu video estará listo en segundos — sin software, sin cuenta, sin marca de agua.",
+    "keyFeatures": "Características clave",
+    "kf1": "Sin marca de agua — descarga videos de TikTok en calidad original sin ningún logo.",
+    "kf2": "Funciona en cualquier dispositivo: iPhone, Android, Windows, Mac o tablet.",
+    "kf3": "100% basado en navegador — nada que instalar ni registrarse.",
+    "kf4": "Siempre gratis. Unos pocos anuncios ayudan a mantener el servicio.",
+    "kf5": "Más plataformas próximamente: YouTube, Instagram, Snapchat y Pinterest."
+  },
+  "features": {
+    "tag": "Por qué Clipzy",
+    "title": "Todo lo que necesitas, nada más",
+    "noWatermark": {
+      "title": "Sin Marca de Agua",
+      "desc": "Descarga videos de TikTok en su calidad original sin ninguna marca de agua ni logo — nunca."
+    },
+    "fast": {
+      "title": "Ultra Rápido",
+      "desc": "Nuestro pipeline de procesamiento optimizado obtiene y entrega tu video en segundos, no minutos."
+    },
+    "devices": {
+      "title": "Todos los Dispositivos",
+      "desc": "Funciona en iPhone, Android, Windows y Mac — cualquier navegador moderno, sin aplicación."
+    },
+    "free": {
+      "title": "Siempre Gratis",
+      "desc": "Sin suscripciones, sin paywalls, sin cargos ocultos. Clipzy es gratuito y siempre lo será."
+    },
+    "noAccount": {
+      "title": "Sin Cuenta",
+      "desc": "Sin registro, sin inicio de sesión, sin email. Solo pega el enlace y tu descarga comienza de inmediato."
+    },
+    "hdQuality": {
+      "title": "Calidad HD",
+      "desc": "Preservamos la calidad de video original. Sin compresión, sin recodificación, sin pérdida de calidad."
+    }
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Preguntas",
+    "titleGrad": "Frecuentes",
+    "q1": {
+      "q": "¿Cómo descargo videos de TikTok sin marca de agua?",
+      "a": "Abre TikTok y encuentra el video. Toca Compartir, luego Copiar enlace. Pega el enlace en Clipzy arriba, haz clic en Descargar y guarda el video limpio en tu dispositivo."
+    },
+    "q2": {
+      "q": "¿Cómo obtengo el enlace del video de TikTok?",
+      "a": "Abre la app de TikTok, encuentra tu video, toca el ícono Compartir y elige Copiar enlace. La URL ya está en tu portapapeles — pégala en el campo de arriba."
+    },
+    "q3": {
+      "q": "¿Dónde se guardan los videos descargados en mi dispositivo?",
+      "a": "Tu navegador guarda los videos en su carpeta de descargas predeterminada. En móvil, los archivos suelen aparecer en tu app de Fotos o Descargas."
+    },
+    "q4": {
+      "q": "¿Clipzy guarda una copia de mis videos descargados?",
+      "a": "No. Clipzy procesa cada solicitud al instante y entrega el archivo directamente a tu dispositivo. No almacenamos ni retenemos ninguna copia de los videos que descargas."
+    },
+    "q5": {
+      "q": "¿Necesito instalar algo o crear una cuenta?",
+      "a": "No. Clipzy es completamente basado en navegador. Sin extensiones, sin apps, sin cuenta requerida — solo pega el enlace y descarga."
+    },
+    "q6": {
+      "q": "¿Clipzy es completamente gratuito?",
+      "a": "Sí, completamente gratis. Mostramos algunos anuncios para mantener el servicio. Sin suscripciones, sin cargos ocultos, sin límites."
+    }
+  },
+  "footer": {
+    "tagline": "Descargador de video gratis — sin marca de agua, sin registro, sin complicaciones.",
+    "copyright": "© 2025 Clipzy. Todos los derechos reservados."
+  },
+  "errors": {
+    "invalidUrl": "Por favor ingresa una URL de video válida.",
+    "unsupportedPlatform": "Plataforma no compatible. Prueba TikTok, YouTube, Instagram, Snapchat o Pinterest.",
+    "timeout": "Tiempo de procesamiento agotado. Por favor inténtalo de nuevo.",
+    "failed": "Procesamiento fallido. Por favor inténtalo de nuevo.",
+    "generic": "No se pudo procesar el video. Por favor inténtalo de nuevo."
+  }
+}

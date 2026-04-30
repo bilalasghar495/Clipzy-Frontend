@@ -16,9 +16,46 @@
       </a>
 
       <nav class="nav-links" aria-label="Main navigation">
-        <a href="#how-to" class="nav-link">How To</a>
-        <a href="#features" class="nav-link">Features</a>
-        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#how-to" class="nav-link">{{ 'nav.howTo' | translate }}</a>
+        <a href="#features" class="nav-link">{{ 'nav.features' | translate }}</a>
+        <a href="#faq" class="nav-link">{{ 'nav.faq' | translate }}</a>
+
+        <!-- Language selector — labels stay in their native language; only structural text is translatable -->
+        <div class="lang-dropdown">
+          <button class="nav-link lang-trigger" aria-haspopup="listbox" aria-label="Select language">
+            <svg class="lang-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            Language
+            <svg class="lang-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </button>
+
+          <div class="lang-menu" role="listbox" aria-label="Available languages">
+            <p class="lang-menu-title">Languages</p>
+            <ul class="lang-list">
+              @for (lang of languages(); track lang.code) {
+                <li class="lang-item"
+                    [class.active]="isActiveLang(lang.code)"
+                    role="option"
+                    [attr.aria-selected]="isActiveLang(lang.code)"
+                    (click)="selectLanguage(lang.code)"
+                    (keydown.enter)="selectLanguage(lang.code)"
+                    tabindex="0">
+                  <span class="lang-flag" aria-hidden="true">{{ lang.flag }}</span>
+                  <span class="lang-name">{{ lang.nativeName }}</span>
+                </li>
+              }
+              @if (languages().length === 0) {
+                <li class="lang-empty">No languages available</li>
+              }
+            </ul>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -30,23 +67,20 @@
 
     <div class="hero-badge" role="note">
       <span class="hero-badge-dot" aria-hidden="true"></span>
-      100% Free &bull; No Watermark &bull; No Account Needed
+      {{ 'hero.badge' | translate }}
     </div>
 
     <h1 class="hero-title">
-      Download Videos<br>
-      <span class="grad">Without Watermark</span>
+      {{ 'hero.title' | translate }}<br>
+      <span class="grad">{{ 'hero.titleGrad' | translate }}</span>
     </h1>
 
-    <p class="hero-sub">
-      Paste a link from TikTok, YouTube, Instagram, or Snapchat.
-      Your video downloads in seconds — clean, fast, and completely free.
-    </p>
+    <p class="hero-sub">{{ 'hero.subtitle' | translate }}</p>
 
     <div class="how-steps" aria-label="How it works">
       <div class="step">
         <span class="step-num" aria-hidden="true">1</span>
-        <span>Paste link</span>
+        <span>{{ 'hero.step1' | translate }}</span>
       </div>
       <span class="step-arrow" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -56,7 +90,7 @@
       </span>
       <div class="step">
         <span class="step-num" aria-hidden="true">2</span>
-        <span>Click download</span>
+        <span>{{ 'hero.step2' | translate }}</span>
       </div>
       <span class="step-arrow" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -66,7 +100,7 @@
       </span>
       <div class="step">
         <span class="step-num" aria-hidden="true">3</span>
-        <span>Save video</span>
+        <span>{{ 'hero.step3' | translate }}</span>
       </div>
     </div>
 
@@ -81,7 +115,7 @@
             <circle cx="12" cy="12" r="10"/>
             <path d="M12 8v4M12 16h.01"/>
           </svg>
-          <span>{{ error() }}</span>
+          <span>{{ error()! | translate }}</span>
         </div>
       }
     </div>
@@ -114,24 +148,20 @@
   <!-- ── About / How-to ─────────────────────────────────────────────────── -->
   <section class="about-section" id="how-to" aria-labelledby="about-title">
     <div class="about-inner">
-      <div class="section-tag">About Clipzy</div>
+      <div class="section-tag">{{ 'about.tag' | translate }}</div>
       <h2 class="section-title" id="about-title">
-        Download TikTok Videos <span class="grad">Without Watermark</span> for Free
+        {{ 'about.title1' | translate }} <span class="grad">{{ 'about.titleGrad' | translate }}</span> {{ 'about.title2' | translate }}
       </h2>
-      <p class="section-desc">
-        Clipzy is a fast, browser-based video downloader. Paste any link and your video is ready in
-        seconds — no software, no account, no watermark. All processing happens on our servers so
-        it works on any device including iPhone, Android, PC and Mac.
-      </p>
+      <p class="section-desc">{{ 'about.desc' | translate }}</p>
 
       <div class="key-features-card">
-        <p class="kf-label">Key features</p>
+        <p class="kf-label">{{ 'about.keyFeatures' | translate }}</p>
         <ul class="kf-list">
-          <li>No watermark — download TikTok videos in original quality without any logo overlay.</li>
-          <li>Works on any device: iPhone, Android, Windows, Mac, or tablet.</li>
-          <li>100% browser-based — nothing to install or sign up for.</li>
-          <li>Always free. A small number of ads help keep the service running.</li>
-          <li>More platforms coming: YouTube, Instagram, Snapchat, and Pinterest.</li>
+          <li>{{ 'about.kf1' | translate }}</li>
+          <li>{{ 'about.kf2' | translate }}</li>
+          <li>{{ 'about.kf3' | translate }}</li>
+          <li>{{ 'about.kf4' | translate }}</li>
+          <li>{{ 'about.kf5' | translate }}</li>
         </ul>
       </div>
     </div>
@@ -139,8 +169,8 @@
 
   <!-- ── Features grid ───────────────────────────────────────────────────── -->
   <section class="features-section" id="features" aria-labelledby="features-title">
-    <div class="section-tag">Why Clipzy</div>
-    <h2 class="section-title" id="features-title">Everything You Need, Nothing You Don't</h2>
+    <div class="section-tag">{{ 'features.tag' | translate }}</div>
+    <h2 class="section-title" id="features-title">{{ 'features.title' | translate }}</h2>
 
     <div class="features-grid">
       <article class="feature-card">
@@ -150,8 +180,8 @@
             <path d="M12 2 4 6v6c0 5 3.4 9.3 8 10 4.6-.7 8-5 8-10V6l-8-4z"/>
           </svg>
         </div>
-        <h3>No Watermark</h3>
-        <p>Download TikTok videos in their original quality without any watermark or logo overlay — ever.</p>
+        <h3>{{ 'features.noWatermark.title' | translate }}</h3>
+        <p>{{ 'features.noWatermark.desc' | translate }}</p>
       </article>
 
       <article class="feature-card">
@@ -161,8 +191,8 @@
             <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/>
           </svg>
         </div>
-        <h3>Lightning Fast</h3>
-        <p>Our optimized processing pipeline fetches and delivers your video in seconds, not minutes.</p>
+        <h3>{{ 'features.fast.title' | translate }}</h3>
+        <p>{{ 'features.fast.desc' | translate }}</p>
       </article>
 
       <article class="feature-card">
@@ -173,8 +203,8 @@
             <path d="M12 18h.01"/>
           </svg>
         </div>
-        <h3>All Devices</h3>
-        <p>Works on iPhone, Android, Windows, and Mac — any modern browser, no app required.</p>
+        <h3>{{ 'features.devices.title' | translate }}</h3>
+        <p>{{ 'features.devices.desc' | translate }}</p>
       </article>
 
       <article class="feature-card">
@@ -185,8 +215,8 @@
             <path d="M12 6v6l4 2"/>
           </svg>
         </div>
-        <h3>Always Free</h3>
-        <p>No subscriptions, no paywalls, no hidden fees. Clipzy is free to use and always will be.</p>
+        <h3>{{ 'features.free.title' | translate }}</h3>
+        <p>{{ 'features.free.desc' | translate }}</p>
       </article>
 
       <article class="feature-card">
@@ -196,8 +226,8 @@
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
           </svg>
         </div>
-        <h3>No Account</h3>
-        <p>No signup, no login, no email. Just paste the link and your download starts immediately.</p>
+        <h3>{{ 'features.noAccount.title' | translate }}</h3>
+        <p>{{ 'features.noAccount.desc' | translate }}</p>
       </article>
 
       <article class="feature-card">
@@ -207,66 +237,48 @@
             <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
           </svg>
         </div>
-        <h3>HD Quality</h3>
-        <p>We preserve the original video quality. No compression, no re-encoding, no quality loss.</p>
+        <h3>{{ 'features.hdQuality.title' | translate }}</h3>
+        <p>{{ 'features.hdQuality.desc' | translate }}</p>
       </article>
     </div>
   </section>
 
   <!-- ── FAQ ─────────────────────────────────────────────────────────────── -->
   <section class="faq-section" id="faq" aria-labelledby="faq-title">
-    <div class="section-tag">FAQ</div>
+    <div class="section-tag">{{ 'faq.tag' | translate }}</div>
     <h2 class="section-title" id="faq-title">
-      Frequently Asked <span class="grad">Questions</span>
+      {{ 'faq.title' | translate }} <span class="grad">{{ 'faq.titleGrad' | translate }}</span>
     </h2>
 
     <div class="faq-list">
       <details class="faq-item">
-        <summary>How do I download TikTok videos without a watermark?</summary>
-        <div class="faq-body">
-          <ol>
-            <li>Open TikTok on your phone or browser and find the video you want.</li>
-            <li>Tap the <strong>Share</strong> button, then tap <strong>Copy Link</strong>.</li>
-            <li>Come back to Clipzy and paste the link into the input field above.</li>
-            <li>Click <strong>Download</strong> and wait a moment while we process it.</li>
-            <li>Save the clean, watermark-free video to your device.</li>
-          </ol>
-        </div>
+        <summary>{{ 'faq.q1.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q1.a' | translate }}</p></div>
       </details>
 
       <details class="faq-item">
-        <summary>How do I get the TikTok video link?</summary>
-        <div class="faq-body">
-          <p>Open the TikTok app, find your video, tap the <strong>Share</strong> icon, and choose <strong>Copy Link</strong>. The URL is now on your clipboard — paste it into the field above and hit Download.</p>
-        </div>
+        <summary>{{ 'faq.q2.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q2.a' | translate }}</p></div>
       </details>
 
       <details class="faq-item">
-        <summary>Where are downloaded videos saved on my device?</summary>
-        <div class="faq-body">
-          <p>Your browser saves videos to its default downloads folder. On mobile, files usually appear in your <strong>Photos</strong> or <strong>Downloads</strong> app depending on your device and browser settings.</p>
-        </div>
+        <summary>{{ 'faq.q3.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q3.a' | translate }}</p></div>
       </details>
 
       <details class="faq-item">
-        <summary>Does Clipzy store a copy of my downloaded videos?</summary>
-        <div class="faq-body">
-          <p>No. Clipzy processes each request on-the-fly and delivers the file directly to your device. We do not store, cache, or retain any copy of the videos you download.</p>
-        </div>
+        <summary>{{ 'faq.q4.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q4.a' | translate }}</p></div>
       </details>
 
       <details class="faq-item">
-        <summary>Do I need to install anything or create an account?</summary>
-        <div class="faq-body">
-          <p>No. Clipzy is entirely browser-based. No extensions, no apps, no account required — just paste the link and download.</p>
-        </div>
+        <summary>{{ 'faq.q5.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q5.a' | translate }}</p></div>
       </details>
 
       <details class="faq-item">
-        <summary>Is Clipzy completely free?</summary>
-        <div class="faq-body">
-          <p>Yes, completely free. We display a small number of ads to keep the service running. No subscriptions, no hidden fees, no limits.</p>
-        </div>
+        <summary>{{ 'faq.q6.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q6.a' | translate }}</p></div>
       </details>
     </div>
   </section>
@@ -284,8 +296,8 @@
       </span>
       <span class="brand-name">Clipzy</span>
     </div>
-    <p class="footer-tagline">Free video downloader — no watermark, no signup, no fuss.</p>
-    <p class="footer-copy">&copy; 2025 Clipzy. All rights reserved.</p>
+    <p class="footer-tagline">{{ 'footer.tagline' | translate }}</p>
+    <p class="footer-copy">{{ 'footer.copyright' | translate }}</p>
   </footer>
 
 </main>

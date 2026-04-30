@@ -16,14 +16,14 @@
 
   <!-- Text -->
   <div class="loader-content">
-    <p class="loader-label">{{ label }}</p>
+    <p class="loader-label">{{ label | translate }}</p>
 
     <!-- Indeterminate progress bar -->
     <div class="loader-track" aria-hidden="true">
       <div class="loader-fill"></div>
     </div>
 
-    <p class="loader-hint">Usually takes 5 – 15 seconds</p>
+    <p class="loader-hint">{{ 'loader.hint' | translate }}</p>
   </div>
 
 </div>

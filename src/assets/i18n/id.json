@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "howTo": "Cara Pakai",
+    "features": "Fitur",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "badge": "100% Gratis • Tanpa Watermark • Tanpa Akun",
+    "title": "Unduh Video",
+    "titleGrad": "Tanpa Watermark",
+    "subtitle": "Tempel tautan dari TikTok, YouTube, Instagram, atau Snapchat. Video kamu diunduh dalam hitungan detik — bersih, cepat, dan sepenuhnya gratis.",
+    "step1": "Tempel tautan",
+    "step2": "Klik unduh",
+    "step3": "Simpan video"
+  },
+  "input": {
+    "placeholder": "Tempel tautan video di sini...",
+    "clear": "Hapus",
+    "paste": "Tempel",
+    "download": "Unduh Gratis",
+    "detected": "Tautan {{ platform }} terdeteksi"
+  },
+  "loader": {
+    "waiting": "Video dalam antrean, menunggu diproses...",
+    "processing": "Mengunduh dan menghapus watermark...",
+    "default": "Memproses video...",
+    "hint": "Biasanya membutuhkan 5 – 15 detik"
+  },
+  "result": {
+    "ready": "Siap diunduh",
+    "noWatermark": "Tanpa Watermark",
+    "hdQuality": "Kualitas HD",
+    "download": "Unduh Video",
+    "tryAnother": "Coba video lain"
+  },
+  "about": {
+    "tag": "Tentang Clipzy",
+    "title1": "Unduh Video TikTok",
+    "titleGrad": "Tanpa Watermark",
+    "title2": "Secara Gratis",
+    "desc": "Clipzy adalah pengunduh video cepat berbasis browser. Tempel tautan apa pun dan video kamu siap dalam hitungan detik — tanpa software, tanpa akun, tanpa watermark.",
+    "keyFeatures": "Fitur utama",
+    "kf1": "Tanpa watermark — unduh video TikTok dalam kualitas asli tanpa logo apa pun.",
+    "kf2": "Berfungsi di semua perangkat: iPhone, Android, Windows, Mac, atau tablet.",
+    "kf3": "100% berbasis browser — tidak perlu menginstal atau mendaftar apa pun.",
+    "kf4": "Selalu gratis. Sejumlah kecil iklan membantu menjaga layanan tetap berjalan.",
+    "kf5": "Platform lain segera hadir: YouTube, Instagram, Snapchat, dan Pinterest."
+  },
+  "features": {
+    "tag": "Mengapa Clipzy",
+    "title": "Semua yang Kamu Butuhkan, Tidak Lebih",
+    "noWatermark": {
+      "title": "Tanpa Watermark",
+      "desc": "Unduh video TikTok dalam kualitas aslinya tanpa watermark atau logo apa pun — selamanya."
+    },
+    "fast": {
+      "title": "Sangat Cepat",
+      "desc": "Pipeline pemrosesan kami yang dioptimalkan mengambil dan mengirimkan video kamu dalam hitungan detik, bukan menit."
+    },
+    "devices": {
+      "title": "Semua Perangkat",
+      "desc": "Berfungsi di iPhone, Android, Windows, dan Mac — browser modern apa pun, tanpa aplikasi."
+    },
+    "free": {
+      "title": "Selalu Gratis",
+      "desc": "Tidak ada langganan, tidak ada paywall, tidak ada biaya tersembunyi. Clipzy gratis dan akan selalu begitu."
+    },
+    "noAccount": {
+      "title": "Tanpa Akun",
+      "desc": "Tidak perlu daftar, login, atau email. Cukup tempel tautan dan unduhan langsung dimulai."
+    },
+    "hdQuality": {
+      "title": "Kualitas HD",
+      "desc": "Kami menjaga kualitas video asli. Tidak ada kompresi, tidak ada pengkodean ulang, tidak ada penurunan kualitas."
+    }
+  },
+  "faq": {
+    "tag": "FAQ",
+    "title": "Pertanyaan yang",
+    "titleGrad": "Sering Ditanyakan",
+    "q1": {
+      "q": "Bagaimana cara mengunduh video TikTok tanpa watermark?",
+      "a": "Buka TikTok dan temukan videonya. Ketuk Bagikan, lalu Salin Tautan. Tempel tautan di Clipzy di atas, klik Unduh, dan simpan video bersih tanpa watermark ke perangkatmu."
+    },
+    "q2": {
+      "q": "Bagaimana cara mendapatkan tautan video TikTok?",
+      "a": "Buka aplikasi TikTok, temukan videonya, ketuk ikon Bagikan, dan pilih Salin Tautan. URL kini ada di clipboard kamu — tempel ke kolom di atas dan tekan Unduh."
+    },
+    "q3": {
+      "q": "Di mana video yang diunduh disimpan di perangkatku?",
+      "a": "Browser kamu menyimpan video ke folder unduhan default. Di ponsel, file biasanya muncul di aplikasi Foto atau Unduhan tergantung pengaturan perangkat dan browsermu."
+    },
+    "q4": {
+      "q": "Apakah Clipzy menyimpan salinan video yang diunduh?",
+      "a": "Tidak. Clipzy memproses setiap permintaan secara langsung dan mengirimkan file langsung ke perangkatmu. Kami tidak menyimpan atau mempertahankan salinan apa pun dari video yang kamu unduh."
+    },
+    "q5": {
+      "q": "Apakah saya perlu menginstal sesuatu atau membuat akun?",
+      "a": "Tidak. Clipzy sepenuhnya berbasis browser. Tidak perlu ekstensi, aplikasi, atau akun — cukup tempel tautan dan unduh."
+    },
+    "q6": {
+      "q": "Apakah Clipzy benar-benar gratis?",
+      "a": "Ya, sepenuhnya gratis. Kami menampilkan sejumlah kecil iklan untuk menjaga layanan tetap berjalan. Tidak ada langganan, tidak ada biaya tersembunyi, tidak ada batasan."
+    }
+  },
+  "footer": {
+    "tagline": "Pengunduh video gratis — tanpa watermark, tanpa daftar, tanpa ribet.",
+    "copyright": "© 2025 Clipzy. Hak cipta dilindungi."
+  },
+  "errors": {
+    "invalidUrl": "Harap masukkan URL video yang valid.",
+    "unsupportedPlatform": "Platform tidak didukung. Coba TikTok, YouTube, Instagram, Snapchat, atau Pinterest.",
+    "timeout": "Waktu pemrosesan habis. Silakan coba lagi.",
+    "failed": "Pemrosesan gagal. Silakan coba lagi.",
+    "generic": "Gagal memproses video. Silakan coba lagi."
+  }
+}

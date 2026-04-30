@@ -8,6 +8,7 @@ import {
   Output,
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslateModule } from '@ngx-translate/core';
 
 interface PlatformHint {
   name: string;
@@ -25,7 +26,7 @@ const PLATFORM_MAP: Array<{ pattern: RegExp; name: string; color: string }> = [
 @Component({
   selector: 'app-video-input',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, TranslateModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './video-input.component.html',
   styleUrls: ['./video-input.component.scss'],

@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, inject } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 import { VideoData } from '../../services/video-downloader.service';
 import { DownloadService } from '../../services/download.service';
 import { PlatformBadgeComponent } from '../platform-badge/platform-badge.component';
@@ -6,7 +7,7 @@ import { PlatformBadgeComponent } from '../platform-badge/platform-badge.compone
 @Component({
   selector: 'app-video-result',
   standalone: true,
-  imports: [PlatformBadgeComponent],
+  imports: [PlatformBadgeComponent, TranslateModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './video-result.component.html',
   styleUrls: ['./video-result.component.scss'],

@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "howTo": "Nasıl Kullanılır",
+    "features": "Özellikler",
+    "faq": "SSS"
+  },
+  "hero": {
+    "badge": "%100 Ücretsiz • Filigransız • Hesapsız",
+    "title": "Videoları İndir",
+    "titleGrad": "Filigransız",
+    "subtitle": "TikTok, YouTube, Instagram veya Snapchat'ten bir bağlantı yapıştır. Videon saniyeler içinde indirilir — temiz, hızlı ve tamamen ücretsiz.",
+    "step1": "Bağlantıyı yapıştır",
+    "step2": "İndir'e tıkla",
+    "step3": "Videoyu kaydet"
+  },
+  "input": {
+    "placeholder": "Video bağlantısını buraya yapıştır...",
+    "clear": "Temizle",
+    "paste": "Yapıştır",
+    "download": "Ücretsiz İndir",
+    "detected": "{{ platform }} bağlantısı algılandı"
+  },
+  "loader": {
+    "waiting": "Video sırada, işlenmesi bekleniyor...",
+    "processing": "İndiriliyor ve filigran kaldırılıyor...",
+    "default": "Video işleniyor...",
+    "hint": "Genellikle 5 – 15 saniye sürer"
+  },
+  "result": {
+    "ready": "İndirilmeye hazır",
+    "noWatermark": "Filigransız",
+    "hdQuality": "HD Kalite",
+    "download": "Videoyu İndir",
+    "tryAnother": "Başka bir video dene"
+  },
+  "about": {
+    "tag": "Clipzy Hakkında",
+    "title1": "TikTok Videolarını İndir",
+    "titleGrad": "Filigransız",
+    "title2": "Ücretsiz",
+    "desc": "Clipzy, tarayıcı tabanlı hızlı bir video indiricidir. Herhangi bir bağlantıyı yapıştır ve videon saniyeler içinde hazır olsun — yazılım yok, hesap yok, filigran yok.",
+    "keyFeatures": "Temel özellikler",
+    "kf1": "Filigransız — TikTok videolarını logo olmadan orijinal kalitede indir.",
+    "kf2": "Her cihazda çalışır: iPhone, Android, Windows, Mac veya tablet.",
+    "kf3": "%100 tarayıcı tabanlı — yükleme veya kayıt gerektirmez.",
+    "kf4": "Her zaman ücretsiz. Az sayıda reklam hizmetin devam etmesine yardımcı olur.",
+    "kf5": "Daha fazla platform geliyor: YouTube, Instagram, Snapchat ve Pinterest."
+  },
+  "features": {
+    "tag": "Neden Clipzy",
+    "title": "İhtiyacın Olan Her Şey, Fazlası Yok",
+    "noWatermark": {
+      "title": "Filigransız",
+      "desc": "TikTok videolarını herhangi bir filigran veya logo olmadan orijinal kalitelerinde indir — hiçbir zaman."
+    },
+    "fast": {
+      "title": "Işık Hızında",
+      "desc": "Optimize edilmiş işleme hattımız videonuzu dakikalar değil, saniyeler içinde getirir ve teslim eder."
+    },
+    "devices": {
+      "title": "Tüm Cihazlar",
+      "desc": "iPhone, Android, Windows ve Mac'te çalışır — herhangi bir modern tarayıcı, uygulama gerekmez."
+    },
+    "free": {
+      "title": "Her Zaman Ücretsiz",
+      "desc": "Abonelik yok, ödeme duvarı yok, gizli ücret yok. Clipzy ücretsizdir ve öyle kalacak."
+    },
+    "noAccount": {
+      "title": "Hesapsız",
+      "desc": "Kayıt yok, giriş yok, e-posta yok. Sadece bağlantıyı yapıştır ve indirmen hemen başlar."
+    },
+    "hdQuality": {
+      "title": "HD Kalite",
+      "desc": "Orijinal video kalitesini koruruz. Sıkıştırma yok, yeniden kodlama yok, kalite kaybı yok."
+    }
+  },
+  "faq": {
+    "tag": "SSS",
+    "title": "Sık Sorulan",
+    "titleGrad": "Sorular",
+    "q1": {
+      "q": "TikTok videolarını filigransız nasıl indirebilirim?",
+      "a": "TikTok'u aç ve videoyu bul. Paylaş'a, ardından Bağlantıyı Kopyala'ya dokun. Bağlantıyı yukarıdaki Clipzy alanına yapıştır, İndir'e tıkla ve temiz filigransız videoyu cihazına kaydet."
+    },
+    "q2": {
+      "q": "TikTok video bağlantısını nasıl alırım?",
+      "a": "TikTok uygulamasını aç, videoyu bul, Paylaş simgesine dokun ve Bağlantıyı Kopyala'yı seç. URL artık panonuzda — yukarıdaki alana yapıştır ve İndir'e bas."
+    },
+    "q3": {
+      "q": "İndirilen videolar cihazımda nereye kaydedilir?",
+      "a": "Tarayıcın videoları varsayılan indirmeler klasörüne kaydeder. Mobilde dosyalar, cihaz ve tarayıcı ayarlarına bağlı olarak genellikle Fotoğraflar veya İndirilenler uygulamasında görünür."
+    },
+    "q4": {
+      "q": "Clipzy indirdiğim videoların bir kopyasını saklar mı?",
+      "a": "Hayır. Clipzy her isteği anında işler ve dosyayı doğrudan cihazına iletir. İndirdiğin videoların hiçbir kopyasını saklamayız veya tutmayız."
+    },
+    "q5": {
+      "q": "Bir şey yüklemem veya hesap oluşturmam gerekiyor mu?",
+      "a": "Hayır. Clipzy tamamen tarayıcı tabanlıdır. Uzantı yok, uygulama yok, hesap gerekmez — sadece bağlantıyı yapıştır ve indir."
+    },
+    "q6": {
+      "q": "Clipzy tamamen ücretsiz mi?",
+      "a": "Evet, tamamen ücretsiz. Hizmeti sürdürmek için az sayıda reklam gösteriyoruz. Abonelik yok, gizli ücret yok, sınır yok."
+    }
+  },
+  "footer": {
+    "tagline": "Ücretsiz video indirici — filigransız, kayıtsız, zahmetsiz.",
+    "copyright": "© 2025 Clipzy. Tüm hakları saklıdır."
+  },
+  "errors": {
+    "invalidUrl": "Lütfen geçerli bir video URL'si girin.",
+    "unsupportedPlatform": "Desteklenmeyen platform. TikTok, YouTube, Instagram, Snapchat veya Pinterest'i deneyin.",
+    "timeout": "İşlem zaman aşımına uğradı. Lütfen tekrar deneyin.",
+    "failed": "İşlem başarısız. Lütfen tekrar deneyin.",
+    "generic": "Video işlenemedi. Lütfen tekrar deneyin."
+  }
+}
