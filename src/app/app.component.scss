@@ -10,7 +10,9 @@
 /* ── Navbar ──────────────────────────────────────────────────────────────── */
 .navbar-shell {
   position: sticky;
-  top: 2px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   padding: 12px 0;
 }
@@ -243,6 +245,7 @@
 /* ── Hero ────────────────────────────────────────────────────────────────── */
 .hero {
   width: 100vw;
+  margin-inline-start: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   box-sizing: border-box;
   padding: 96px 24px 80px;

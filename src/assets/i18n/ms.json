@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "howTo": "Cara",
+    "features": "Ciri-ciri",
+    "faq": "Soalan Lazim"
+  },
+  "hero": {
+    "badge": "100% Percuma • Tiada Tanda Air • Tiada Akaun Diperlukan",
+    "title": "Muat Turun Video",
+    "titleGrad": "Tanpa Tanda Air",
+    "subtitle": "Tampal pautan dari TikTok, YouTube, Instagram atau Snapchat. Video anda dimuat turun dalam beberapa saat — bersih, pantas dan sepenuhnya percuma.",
+    "step1": "Tampal pautan",
+    "step2": "Klik muat turun",
+    "step3": "Simpan video"
+  },
+  "input": {
+    "placeholder": "Tampal pautan video di sini...",
+    "clear": "Padam",
+    "paste": "Tampal",
+    "download": "Muat Turun Percuma",
+    "detected": "Pautan {{ platform }} dikesan"
+  },
+  "loader": {
+    "waiting": "Video dalam barisan, menunggu untuk diproses...",
+    "processing": "Memuat turun dan membuang tanda air...",
+    "default": "Memproses video...",
+    "hint": "Biasanya mengambil 5 – 15 saat"
+  },
+  "result": {
+    "ready": "Sedia untuk dimuat turun",
+    "noWatermark": "Tiada Tanda Air",
+    "hdQuality": "Kualiti HD",
+    "download": "Muat Turun Video",
+    "tryAnother": "Cuba video lain"
+  },
+  "about": {
+    "tag": "Tentang Clipzy",
+    "title1": "Muat Turun Video TikTok",
+    "titleGrad": "Tanpa Tanda Air",
+    "title2": "percuma",
+    "desc": "Clipzy adalah downloader video pantas berasaskan penyemak imbas. Tampal sebarang pautan dan video anda sedia dalam beberapa saat — tiada perisian, tiada akaun, tiada tanda air. Semua pemprosesan berlaku di pelayan kami jadi ia berfungsi pada sebarang peranti termasuk iPhone, Android, PC dan Mac.",
+    "keyFeatures": "Ciri-ciri utama",
+    "kf1": "Tiada tanda air — muat turun video TikTok dalam kualiti asal tanpa sebarang logo tindihan.",
+    "kf2": "Berfungsi pada sebarang peranti: iPhone, Android, Windows, Mac atau tablet.",
+    "kf3": "100% berasaskan penyemak imbas — tiada apa yang perlu dipasang atau mendaftar.",
+    "kf4": "Sentiasa percuma. Bilangan kecil iklan membantu mengekalkan perkhidmatan berjalan.",
+    "kf5": "Lebih banyak platform akan datang: YouTube, Instagram, Snapchat dan Pinterest."
+  },
+  "features": {
+    "tag": "Mengapa Clipzy",
+    "title": "Semua yang Anda Perlu, Tiada yang Anda Tidak Perlu",
+    "noWatermark": {
+      "title": "Tiada Tanda Air",
+      "desc": "Muat turun video TikTok dalam kualiti asal mereka tanpa tanda air atau logo tindihan — pernah."
+    },
+    "fast": {
+      "title": "Pantas Kilat",
+      "desc": "Saluran paip pemprosesan kami yang dioptimumkan mengambil dan menghantar video anda dalam beberapa saat, bukan minit."
+    },
+    "devices": {
+      "title": "Semua Peranti",
+      "desc": "Berfungsi pada iPhone, Android, Windows dan Mac — sebarang penyemak imbas moden, tiada aplikasi diperlukan."
+    },
+    "free": {
+      "title": "Sentiasa Percuma",
+      "desc": "Tiada langganan, tiada paywall, tiada yuran tersembunyi. Clipzy percuma untuk digunakan dan akan sentiasa begitu."
+    },
+    "noAccount": {
+      "title": "Tiada Akaun",
+      "desc": "Tiada pendaftaran, tiada log masuk, tiada emel. Hanya tampal pautan dan muat turun anda bermula serta-merta."
+    },
+    "hdQuality": {
+      "title": "Kualiti HD",
+      "desc": "Kami mengekalkan kualiti video asal. Tiada pemampatan, tiada penyandian semula, tiada kehilangan kualiti."
+    }
+  },
+  "faq": {
+    "tag": "Soalan Lazim",
+    "title": "Soalan Lazim",
+    "titleGrad": "",
+    "q1": {
+      "q": "Bagaimana saya memuat turun video TikTok tanpa tanda air?",
+      "a": "Buka TikTok dan cari video. Ketik Kongsi, kemudian Salin Pautan. Tampal pautan ke dalam Clipzy di atas, klik Muat Turun dan simpan video bersih tanpa tanda air ke peranti anda."
+    },
+    "q2": {
+      "q": "Bagaimana saya mendapat pautan video TikTok?",
+      "a": "Buka aplikasi TikTok, cari video anda, ketik ikon Kongsi dan pilih Salin Pautan. URL kini berada di papan keratan anda — tampalnya ke dalam medan di atas dan tekan Muat Turun."
+    },
+    "q3": {
+      "q": "Di mana video yang dimuat turun disimpan di peranti saya?",
+      "a": "Penyemak imbas anda menyimpan video ke folder muat turun lalai. Di mudah alih, fail biasanya muncul dalam aplikasi Foto atau Muat Turun bergantung pada peranti dan tetapan penyemak imbas anda."
+    },
+    "q4": {
+      "q": "Adakah Clipzy menyimpan salinan video yang dimuat turun saya?",
+      "a": "Tidak. Clipzy memproses setiap permintaan secara langsung dan menghantar fail terus ke peranti anda. Kami tidak menyimpan, cache atau mengekalkan sebarang salinan video yang anda muat turun."
+    },
+    "q5": {
+      "q": "Adakah saya perlu memasang apa-apa atau membuat akaun?",
+      "a": "Tidak. Clipzy adalah sepenuhnya berasaskan penyemak imbas. Tiada sambungan, tiada aplikasi, tiada akaun diperlukan — hanya tampal pautan dan muat turun."
+    },
+    "q6": {
+      "q": "Adakah Clipzy sepenuhnya percuma?",
+      "a": "Ya, sepenuhnya percuma. Kami memaparkan bilangan kecil iklan untuk mengekalkan perkhidmatan berjalan. Tiada langganan, tiada yuran tersembunyi, tiada had."
+    }
+  },
+  "footer": {
+    "tagline": "Downloader video percuma — tiada tanda air, tiada pendaftaran, tiada masalah.",
+    "copyright": "© 2025 Clipzy. Hak cipta terpelihara."
+  },
+  "errors": {
+    "invalidUrl": "Sila masukkan URL video yang sah.",
+    "unsupportedPlatform": "Platform tidak disokong. Cuba TikTok, YouTube, Instagram, Snapchat atau Pinterest.",
+    "timeout": "Pemprosesan tamat masa. Sila cuba lagi.",
+    "failed": "Pemprosesan gagal. Sila cuba lagi.",
+    "generic": "Gagal memproses video. Sila cuba lagi."
+  }
+}

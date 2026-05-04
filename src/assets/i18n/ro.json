@@ -1,0 +1,117 @@
+{
+  "nav": {
+    "howTo": "Cum să",
+    "features": "Caracteristici",
+    "faq": "Întrebări frecvente"
+  },
+  "hero": {
+    "badge": "100% Gratuit • Fără watermark • Fără cont necesar",
+    "title": "Descarcă videoclipuri",
+    "titleGrad": "Fără watermark",
+    "subtitle": "Lipește un link de la TikTok, YouTube, Instagram sau Snapchat. Videoclipul tău se descarcă în câteva secunde — curat, rapid și complet gratuit.",
+    "step1": "Lipește link-ul",
+    "step2": "Apasă descarcă",
+    "step3": "Salvează videoclipul"
+  },
+  "input": {
+    "placeholder": "Lipește link-ul videoclipului aici...",
+    "clear": "Șterge",
+    "paste": "Lipește",
+    "download": "Descarcă gratuit",
+    "detected": "Link {{ platform }} detectat"
+  },
+  "loader": {
+    "waiting": "Videoclip în așteptare, procesare în curs...",
+    "processing": "Descărcare și eliminare watermark...",
+    "default": "Procesare videoclip...",
+    "hint": "De obicei durează 5 – 15 secunde"
+  },
+  "result": {
+    "ready": "Gata pentru descărcare",
+    "noWatermark": "Fără watermark",
+    "hdQuality": "Calitate HD",
+    "download": "Descarcă videoclipul",
+    "tryAnother": "Încearcă alt videoclip"
+  },
+  "about": {
+    "tag": "Despre Clipzy",
+    "title1": "Descarcă videoclipuri TikTok",
+    "titleGrad": "Fără watermark",
+    "title2": "gratuit",
+    "desc": "Clipzy este un downloader rapid de videoclipuri bazat pe browser. Lipește orice link și videoclipul tău este gata în câteva secunde — fără software, fără cont, fără watermark. Toată procesarea se întâmplă pe serverele noastre, așa că funcționează pe orice dispozitiv, inclusiv iPhone, Android, PC și Mac.",
+    "keyFeatures": "Caracteristici cheie",
+    "kf1": "Fără watermark — descarcă videoclipuri TikTok în calitate originală fără niciun logo suprapus.",
+    "kf2": "Funcționează pe orice dispozitiv: iPhone, Android, Windows, Mac sau tabletă.",
+    "kf3": "100% bazat pe browser — nimic de instalat sau de înregistrat.",
+    "kf4": "Întotdeauna gratuit. Un număr mic de reclame ajută la menținerea serviciului.",
+    "kf5": "Mai multe platforme în curând: YouTube, Instagram, Snapchat și Pinterest."
+  },
+  "features": {
+    "tag": "De ce Clipzy",
+    "title": "Tot ce ai nevoie, nimic ce nu ai nevoie",
+    "noWatermark": {
+      "title": "Fără watermark",
+      "desc": "Descarcă videoclipuri TikTok în calitate originală fără niciun watermark sau logo suprapus — niciodată."
+    },
+    "fast": {
+      "title": "Fulgerător de rapid",
+      "desc": "Pipeline-ul nostru de procesare optimizat aduce și livrează videoclipul tău în câteva secunde, nu minute."
+    },
+    "devices": {
+      "title": "Toate dispozitivele",
+      "desc": "Funcționează pe iPhone, Android, Windows și Mac — orice browser modern, fără aplicație necesară."
+    },
+    "free": {
+      "title": "Întotdeauna gratuit",
+      "desc": "Fără abonamente, fără paywall-uri, fără taxe ascunse. Clipzy este gratuit de utilizat și va rămâne mereu așa."
+    },
+    "noAccount": {
+      "title": "Fără cont",
+      "desc": "Fără înregistrare, fără login, fără email. Doar lipește link-ul și descărcarea începe imediat."
+    },
+    "hdQuality": {
+      "title": "Calitate HD",
+      "desc": "Păstrăm calitatea originală a videoclipului. Fără compresie, fără re-encoding, fără pierdere de calitate."
+    }
+  },
+  "faq": {
+    "tag": "Întrebări frecvente",
+    "title": "Întrebări frecvente",
+    "titleGrad": "",
+    "q1": {
+      "q": "Cum descarc videoclipuri TikTok fără watermark?",
+      "a": "Deschide TikTok și găsește videoclipul. Apasă Share, apoi Copy Link. Lipește link-ul în Clipzy de mai sus, apasă Download și salvează videoclipul curat fără watermark pe dispozitivul tău."
+    },
+    "q2": {
+      "q": "Cum obțin link-ul videoclipului TikTok?",
+      "a": "Deschide aplicația TikTok, găsește videoclipul tău, apasă pictograma Share și alege Copy Link. URL-ul este acum pe clipboard — lipește-l în câmpul de mai sus și apasă Download."
+    },
+    "q3": {
+      "q": "Unde sunt salvate videoclipurile descărcate pe dispozitivul meu?",
+      "a": "Browser-ul tău salvează videoclipurile în folderul implicit de descărcări. Pe mobil, fișierele apar de obicei în aplicația Photos sau Downloads, în funcție de dispozitiv și setările browser-ului."
+    },
+    "q4": {
+      "q": "Clipzy stochează o copie a videoclipurilor descărcate?",
+      "a": "Nu. Clipzy procesează fiecare cerere în timp real și livrează fișierul direct pe dispozitivul tău. Nu stocăm, nu cache-uim și nu păstrăm nicio copie a videoclipurilor pe care le descarci."
+    },
+    "q5": {
+      "q": "Trebuie să instalez ceva sau să creez un cont?",
+      "a": "Nu. Clipzy este complet bazat pe browser. Fără extensii, fără aplicații, fără cont necesar — doar lipește link-ul și descarcă."
+    },
+    "q6": {
+      "q": "Este Clipzy complet gratuit?",
+      "a": "Da, complet gratuit. Afișăm un număr mic de reclame pentru a menține serviciul. Fără abonamente, fără taxe ascunse, fără limite."
+    }
+  },
+  "footer": {
+    "tagline": "Downloader gratuit de videoclipuri — fără watermark, fără înregistrare, fără complicații.",
+    "copyright": "© 2025 Clipzy. Toate drepturile rezervate."
+  },
+  "errors": {
+    "invalidUrl": "Te rugăm să introduci un URL valid pentru videoclip.",
+    "unsupportedPlatform": "Platformă nesuportată. Încearcă TikTok, YouTube, Instagram, Snapchat sau Pinterest.",
+    "timeout": "Procesarea a expirat. Te rugăm să încerci din nou.",
+    "failed": "Procesarea a eșuat. Te rugăm să încerci din nou.",
+    "generic": "Eșec la procesarea videoclipului. Te rugăm să încerci din nou."
+  }
+}
