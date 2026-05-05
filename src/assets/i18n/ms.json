@@ -8,7 +8,7 @@
     "badge": "100% Percuma • Tiada Tanda Air • Tiada Akaun Diperlukan",
     "title": "Muat Turun Video",
     "titleGrad": "Tanpa Tanda Air",
-    "subtitle": "Tampal pautan dari TikTok, YouTube, Instagram atau Snapchat. Video anda dimuat turun dalam beberapa saat — bersih, pantas dan sepenuhnya percuma.",
+    "subtitle": "Tampal pautan dari TikTok, YouTube, Instagram atau Pinterest. Video anda dimuat turun dalam beberapa saat, bersih, pantas dan sepenuhnya percuma.",
     "step1": "Tampal pautan",
     "step2": "Klik muat turun",
     "step3": "Simpan video"
@@ -35,23 +35,23 @@
   },
   "about": {
     "tag": "Tentang Clipzy",
-    "title1": "Muat Turun Video TikTok",
+    "title1": "Muat Turun Video",
     "titleGrad": "Tanpa Tanda Air",
     "title2": "percuma",
-    "desc": "Clipzy adalah downloader video pantas berasaskan penyemak imbas. Tampal sebarang pautan dan video anda sedia dalam beberapa saat — tiada perisian, tiada akaun, tiada tanda air. Semua pemprosesan berlaku di pelayan kami jadi ia berfungsi pada sebarang peranti termasuk iPhone, Android, PC dan Mac.",
+    "desc": "Clipzy adalah downloader video pantas berasaskan penyemak imbas. Tampal sebarang pautan dan video anda sedia dalam beberapa saat, tiada perisian, tiada akaun, tiada tanda air. Semua pemprosesan berlaku di pelayan kami jadi ia berfungsi pada sebarang peranti termasuk iPhone, Android, PC dan Mac.",
     "keyFeatures": "Ciri-ciri utama",
-    "kf1": "Tiada tanda air — muat turun video TikTok dalam kualiti asal tanpa sebarang logo tindihan.",
+    "kf1": "Tiada tanda air, muat turun video dari TikTok, YouTube, Instagram dan Pinterest tanpa sebarang logo tindihan.",
     "kf2": "Berfungsi pada sebarang peranti: iPhone, Android, Windows, Mac atau tablet.",
-    "kf3": "100% berasaskan penyemak imbas — tiada apa yang perlu dipasang atau mendaftar.",
+    "kf3": "100% berasaskan penyemak imbas, tiada apa yang perlu dipasang atau mendaftar.",
     "kf4": "Sentiasa percuma. Bilangan kecil iklan membantu mengekalkan perkhidmatan berjalan.",
-    "kf5": "Lebih banyak platform akan datang: YouTube, Instagram, Snapchat dan Pinterest."
+    "kf5": "Menyokong TikTok, YouTube, Instagram dan Pinterest, dengan lebih banyak platform akan datang."
   },
   "features": {
     "tag": "Mengapa Clipzy",
     "title": "Semua yang Anda Perlu, Tiada yang Anda Tidak Perlu",
     "noWatermark": {
       "title": "Tiada Tanda Air",
-      "desc": "Muat turun video TikTok dalam kualiti asal mereka tanpa tanda air atau logo tindihan — pernah."
+      "desc": "Muat turun video TikTok dalam kualiti asal mereka tanpa tanda air atau logo tindihan, pernah."
     },
     "fast": {
       "title": "Pantas Kilat",
@@ -59,7 +59,7 @@
     },
     "devices": {
       "title": "Semua Peranti",
-      "desc": "Berfungsi pada iPhone, Android, Windows dan Mac — sebarang penyemak imbas moden, tiada aplikasi diperlukan."
+      "desc": "Berfungsi pada iPhone, Android, Windows dan Mac, sebarang penyemak imbas moden, tiada aplikasi diperlukan."
     },
     "free": {
       "title": "Sentiasa Percuma",
@@ -84,7 +84,7 @@
     },
     "q2": {
       "q": "Bagaimana saya mendapat pautan video TikTok?",
-      "a": "Buka aplikasi TikTok, cari video anda, ketik ikon Kongsi dan pilih Salin Pautan. URL kini berada di papan keratan anda — tampalnya ke dalam medan di atas dan tekan Muat Turun."
+      "a": "Buka aplikasi TikTok, cari video anda, ketik ikon Kongsi dan pilih Salin Pautan. URL kini berada di papan keratan anda, tampalnya ke dalam medan di atas dan tekan Muat Turun."
     },
     "q3": {
       "q": "Di mana video yang dimuat turun disimpan di peranti saya?",
@@ -96,7 +96,7 @@
     },
     "q5": {
       "q": "Adakah saya perlu memasang apa-apa atau membuat akaun?",
-      "a": "Tidak. Clipzy adalah sepenuhnya berasaskan penyemak imbas. Tiada sambungan, tiada aplikasi, tiada akaun diperlukan — hanya tampal pautan dan muat turun."
+      "a": "Tidak. Clipzy adalah sepenuhnya berasaskan penyemak imbas. Tiada sambungan, tiada aplikasi, tiada akaun diperlukan, hanya tampal pautan dan muat turun."
     },
     "q6": {
       "q": "Adakah Clipzy sepenuhnya percuma?",
@@ -104,12 +104,12 @@
     }
   },
   "footer": {
-    "tagline": "Downloader video percuma — tiada tanda air, tiada pendaftaran, tiada masalah.",
+    "tagline": "Downloader video percuma, tiada tanda air, tiada pendaftaran, tiada masalah.",
     "copyright": "© 2025 Clipzy. Hak cipta terpelihara."
   },
   "errors": {
     "invalidUrl": "Sila masukkan URL video yang sah.",
-    "unsupportedPlatform": "Platform tidak disokong. Cuba TikTok, YouTube, Instagram, Snapchat atau Pinterest.",
+    "unsupportedPlatform": "Platform tidak disokong. Disokong: TikTok, YouTube, Instagram dan Pinterest.",
     "timeout": "Pemprosesan tamat masa. Sila cuba lagi.",
     "failed": "Pemprosesan gagal. Sila cuba lagi.",
     "generic": "Gagal memproses video. Sila cuba lagi."

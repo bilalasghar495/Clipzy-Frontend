@@ -8,7 +8,7 @@
     "badge": "100% Gratis • Sin Marca de Agua • Sin Cuenta",
     "title": "Descarga Videos",
     "titleGrad": "Sin Marca de Agua",
-    "subtitle": "Pega un enlace de TikTok, YouTube, Instagram o Snapchat. Tu video se descarga en segundos — limpio, rápido y completamente gratis.",
+    "subtitle": "Pega un enlace de TikTok, YouTube, Instagram o Pinterest. Tu video se descarga en segundos, limpio, rápido y completamente gratis.",
     "step1": "Pega el enlace",
     "step2": "Haz clic en descargar",
     "step3": "Guarda el video"
@@ -35,23 +35,23 @@
   },
   "about": {
     "tag": "Sobre Clipzy",
-    "title1": "Descarga Videos de TikTok",
+    "title1": "Descarga Videos",
     "titleGrad": "Sin Marca de Agua",
     "title2": "Gratis",
-    "desc": "Clipzy es un descargador de videos rápido basado en el navegador. Pega cualquier enlace y tu video estará listo en segundos — sin software, sin cuenta, sin marca de agua.",
+    "desc": "Clipzy es un descargador de videos rápido basado en el navegador. Pega cualquier enlace y tu video estará listo en segundos, sin software, sin cuenta, sin marca de agua.",
     "keyFeatures": "Características clave",
-    "kf1": "Sin marca de agua — descarga videos de TikTok en calidad original sin ningún logo.",
+    "kf1": "Sin marca de agua, descarga videos de TikTok, YouTube, Instagram y Pinterest en calidad original sin ningún logo.",
     "kf2": "Funciona en cualquier dispositivo: iPhone, Android, Windows, Mac o tablet.",
-    "kf3": "100% basado en navegador — nada que instalar ni registrarse.",
+    "kf3": "100% basado en navegador, nada que instalar ni registrarse.",
     "kf4": "Siempre gratis. Unos pocos anuncios ayudan a mantener el servicio.",
-    "kf5": "Más plataformas próximamente: YouTube, Instagram, Snapchat y Pinterest."
+    "kf5": "Compatible con TikTok, YouTube, Instagram y Pinterest, con más plataformas próximamente."
   },
   "features": {
     "tag": "Por qué Clipzy",
     "title": "Todo lo que necesitas, nada más",
     "noWatermark": {
       "title": "Sin Marca de Agua",
-      "desc": "Descarga videos de TikTok en su calidad original sin ninguna marca de agua ni logo — nunca."
+      "desc": "Descarga videos de TikTok en su calidad original sin ninguna marca de agua ni logo, nunca."
     },
     "fast": {
       "title": "Ultra Rápido",
@@ -59,7 +59,7 @@
     },
     "devices": {
       "title": "Todos los Dispositivos",
-      "desc": "Funciona en iPhone, Android, Windows y Mac — cualquier navegador moderno, sin aplicación."
+      "desc": "Funciona en iPhone, Android, Windows y Mac, cualquier navegador moderno, sin aplicación."
     },
     "free": {
       "title": "Siempre Gratis",
@@ -84,7 +84,7 @@
     },
     "q2": {
       "q": "¿Cómo obtengo el enlace del video de TikTok?",
-      "a": "Abre la app de TikTok, encuentra tu video, toca el ícono Compartir y elige Copiar enlace. La URL ya está en tu portapapeles — pégala en el campo de arriba."
+      "a": "Abre la app de TikTok, encuentra tu video, toca el ícono Compartir y elige Copiar enlace. La URL ya está en tu portapapeles, pégala en el campo de arriba."
     },
     "q3": {
       "q": "¿Dónde se guardan los videos descargados en mi dispositivo?",
@@ -96,7 +96,7 @@
     },
     "q5": {
       "q": "¿Necesito instalar algo o crear una cuenta?",
-      "a": "No. Clipzy es completamente basado en navegador. Sin extensiones, sin apps, sin cuenta requerida — solo pega el enlace y descarga."
+      "a": "No. Clipzy es completamente basado en navegador. Sin extensiones, sin apps, sin cuenta requerida, solo pega el enlace y descarga."
     },
     "q6": {
       "q": "¿Clipzy es completamente gratuito?",
@@ -104,12 +104,12 @@
     }
   },
   "footer": {
-    "tagline": "Descargador de video gratis — sin marca de agua, sin registro, sin complicaciones.",
+    "tagline": "Descargador de video gratis, sin marca de agua, sin registro, sin complicaciones.",
     "copyright": "© 2025 Clipzy. Todos los derechos reservados."
   },
   "errors": {
     "invalidUrl": "Por favor ingresa una URL de video válida.",
-    "unsupportedPlatform": "Plataforma no compatible. Prueba TikTok, YouTube, Instagram, Snapchat o Pinterest.",
+    "unsupportedPlatform": "Plataforma no compatible. Compatibles: TikTok, YouTube, Instagram y Pinterest.",
     "timeout": "Tiempo de procesamiento agotado. Por favor inténtalo de nuevo.",
     "failed": "Procesamiento fallido. Por favor inténtalo de nuevo.",
     "generic": "No se pudo procesar el video. Por favor inténtalo de nuevo."

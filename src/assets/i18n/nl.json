@@ -8,7 +8,7 @@
     "badge": "100% Gratis • Geen Watermerk • Geen Account Nodig",
     "title": "Download Video's",
     "titleGrad": "Zonder Watermerk",
-    "subtitle": "Plak een link van TikTok, YouTube, Instagram of Snapchat. Je video downloadt in seconden — schoon, snel en volledig gratis.",
+    "subtitle": "Plak een link van TikTok, YouTube, Instagram of Pinterest. Je video downloadt in seconden, schoon, snel en volledig gratis.",
     "step1": "Link plakken",
     "step2": "Klik download",
     "step3": "Video opslaan"
@@ -35,23 +35,23 @@
   },
   "about": {
     "tag": "Over Clipzy",
-    "title1": "Download TikTok Video's",
+    "title1": "Download Video's",
     "titleGrad": "Zonder Watermerk",
     "title2": "gratis",
-    "desc": "Clipzy is een snelle, browser-gebaseerde video downloader. Plak elke link en je video is klaar in seconden — geen software, geen account, geen watermerk. Alle verwerking gebeurt op onze servers dus het werkt op elk apparaat inclusief iPhone, Android, PC en Mac.",
+    "desc": "Clipzy is een snelle, browser-gebaseerde video downloader. Plak elke link en je video is klaar in seconden, geen software, geen account, geen watermerk. Alle verwerking gebeurt op onze servers dus het werkt op elk apparaat inclusief iPhone, Android, PC en Mac.",
     "keyFeatures": "Belangrijkste functies",
-    "kf1": "Geen watermerk — download TikTok video's in originele kwaliteit zonder logo overlay.",
+    "kf1": "Geen watermerk, download video's van TikTok, YouTube, Instagram en Pinterest zonder logo overlay.",
     "kf2": "Werkt op elk apparaat: iPhone, Android, Windows, Mac of tablet.",
-    "kf3": "100% browser-gebaseerd — niets te installeren of aanmelden voor.",
+    "kf3": "100% browser-gebaseerd, niets te installeren of aanmelden voor.",
     "kf4": "Altijd gratis. Een klein aantal advertenties helpt de service draaiende te houden.",
-    "kf5": "Meer platforms komen: YouTube, Instagram, Snapchat en Pinterest."
+    "kf5": "Ondersteunt TikTok, YouTube, Instagram en Pinterest, met meer platforms onderweg."
   },
   "features": {
     "tag": "Waarom Clipzy",
     "title": "Alles wat je nodig hebt, niets wat je niet hebt",
     "noWatermark": {
       "title": "Geen Watermerk",
-      "desc": "Download TikTok video's in hun originele kwaliteit zonder watermerk of logo overlay — ooit."
+      "desc": "Download TikTok video's in hun originele kwaliteit zonder watermerk of logo overlay, ooit."
     },
     "fast": {
       "title": "Bliksemsnel",
@@ -59,7 +59,7 @@
     },
     "devices": {
       "title": "Alle Apparaten",
-      "desc": "Werkt op iPhone, Android, Windows en Mac — elke moderne browser, geen app vereist."
+      "desc": "Werkt op iPhone, Android, Windows en Mac, elke moderne browser, geen app vereist."
     },
     "free": {
       "title": "Altijd Gratis",
@@ -84,7 +84,7 @@
     },
     "q2": {
       "q": "Hoe krijg ik de TikTok video link?",
-      "a": "Open de TikTok app, vind je video, tik op het Share icoon en kies Kopieer Link. De URL staat nu op je klembord — plak het in het veld hierboven en druk op Download."
+      "a": "Open de TikTok app, vind je video, tik op het Share icoon en kies Kopieer Link. De URL staat nu op je klembord, plak het in het veld hierboven en druk op Download."
     },
     "q3": {
       "q": "Waar worden gedownloade video's opgeslagen op mijn apparaat?",
@@ -96,7 +96,7 @@
     },
     "q5": {
       "q": "Moet ik iets installeren of een account aanmaken?",
-      "a": "Nee. Clipzy is volledig browser-gebaseerd. Geen extensies, geen apps, geen account vereist — plak gewoon de link en download."
+      "a": "Nee. Clipzy is volledig browser-gebaseerd. Geen extensies, geen apps, geen account vereist, plak gewoon de link en download."
     },
     "q6": {
       "q": "Is Clipzy volledig gratis?",
@@ -104,12 +104,12 @@
     }
   },
   "footer": {
-    "tagline": "Gratis video downloader — geen watermerk, geen aanmelding, geen gedoe.",
+    "tagline": "Gratis video downloader, geen watermerk, geen aanmelding, geen gedoe.",
     "copyright": "© 2025 Clipzy. Alle rechten voorbehouden."
   },
   "errors": {
     "invalidUrl": "Voer een geldige video URL in.",
-    "unsupportedPlatform": "Niet-ondersteunde platform. Probeer TikTok, YouTube, Instagram, Snapchat of Pinterest.",
+    "unsupportedPlatform": "Niet-ondersteund platform. Ondersteund: TikTok, YouTube, Instagram en Pinterest.",
     "timeout": "Verwerking time-out. Probeer het opnieuw.",
     "failed": "Verwerking mislukt. Probeer het opnieuw.",
     "generic": "Video verwerken mislukt. Probeer het opnieuw."

@@ -19,6 +19,9 @@ export interface VideoData {
   title: string;
   thumbnail: string;
   downloadUrl: string;
+  duration?: string;
+  caption?: string;
+  tags?: string[];
 }
 
 @Injectable({ providedIn: 'root' })
@@ -110,6 +113,9 @@ export class VideoDownloaderService {
           title: result.title,
           thumbnail: result.thumbnail,
           downloadUrl: result.downloadUrl,
+          duration: result.duration,
+          caption: result.caption,
+          tags: result.tags,
         });
         this.loading.set(false);
         this.jobStatus.set('completed');

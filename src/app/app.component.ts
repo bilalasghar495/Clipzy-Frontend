@@ -38,7 +38,6 @@ export class AppComponent {
     { name: 'TikTok',    color: '#ff0050' },
     { name: 'YouTube',   color: '#ff0000' },
     { name: 'Instagram', color: '#e1306c' },
-    { name: 'Snapchat',  color: '#fffc00' },
     { name: 'Pinterest', color: '#e60023' },
   ]);
 
