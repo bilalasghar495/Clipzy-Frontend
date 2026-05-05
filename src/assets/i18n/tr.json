@@ -8,7 +8,7 @@
     "badge": "%100 Ücretsiz • Filigransız • Hesapsız",
     "title": "Videoları İndir",
     "titleGrad": "Filigransız",
-    "subtitle": "TikTok, YouTube, Instagram veya Snapchat'ten bir bağlantı yapıştır. Videon saniyeler içinde indirilir — temiz, hızlı ve tamamen ücretsiz.",
+    "subtitle": "TikTok, YouTube, Instagram veya Pinterest'ten bir bağlantı yapıştır. Videon saniyeler içinde indirilir, temiz, hızlı ve tamamen ücretsiz.",
     "step1": "Bağlantıyı yapıştır",
     "step2": "İndir'e tıkla",
     "step3": "Videoyu kaydet"
@@ -35,23 +35,23 @@
   },
   "about": {
     "tag": "Clipzy Hakkında",
-    "title1": "TikTok Videolarını İndir",
+    "title1": "Videoları İndir",
     "titleGrad": "Filigransız",
     "title2": "Ücretsiz",
-    "desc": "Clipzy, tarayıcı tabanlı hızlı bir video indiricidir. Herhangi bir bağlantıyı yapıştır ve videon saniyeler içinde hazır olsun — yazılım yok, hesap yok, filigran yok.",
+    "desc": "Clipzy, tarayıcı tabanlı hızlı bir video indiricidir. Herhangi bir bağlantıyı yapıştır ve videon saniyeler içinde hazır olsun, yazılım yok, hesap yok, filigran yok.",
     "keyFeatures": "Temel özellikler",
-    "kf1": "Filigransız — TikTok videolarını logo olmadan orijinal kalitede indir.",
+    "kf1": "Filigransız, TikTok, YouTube, Instagram ve Pinterest videolarını logo olmadan orijinal kalitede indir.",
     "kf2": "Her cihazda çalışır: iPhone, Android, Windows, Mac veya tablet.",
-    "kf3": "%100 tarayıcı tabanlı — yükleme veya kayıt gerektirmez.",
+    "kf3": "%100 tarayıcı tabanlı, yükleme veya kayıt gerektirmez.",
     "kf4": "Her zaman ücretsiz. Az sayıda reklam hizmetin devam etmesine yardımcı olur.",
-    "kf5": "Daha fazla platform geliyor: YouTube, Instagram, Snapchat ve Pinterest."
+    "kf5": "TikTok, YouTube, Instagram ve Pinterest desteklenir, daha fazla platform yolda."
   },
   "features": {
     "tag": "Neden Clipzy",
     "title": "İhtiyacın Olan Her Şey, Fazlası Yok",
     "noWatermark": {
       "title": "Filigransız",
-      "desc": "TikTok videolarını herhangi bir filigran veya logo olmadan orijinal kalitelerinde indir — hiçbir zaman."
+      "desc": "TikTok videolarını herhangi bir filigran veya logo olmadan orijinal kalitelerinde indir, hiçbir zaman."
     },
     "fast": {
       "title": "Işık Hızında",
@@ -59,7 +59,7 @@
     },
     "devices": {
       "title": "Tüm Cihazlar",
-      "desc": "iPhone, Android, Windows ve Mac'te çalışır — herhangi bir modern tarayıcı, uygulama gerekmez."
+      "desc": "iPhone, Android, Windows ve Mac'te çalışır, herhangi bir modern tarayıcı, uygulama gerekmez."
     },
     "free": {
       "title": "Her Zaman Ücretsiz",
@@ -84,7 +84,7 @@
     },
     "q2": {
       "q": "TikTok video bağlantısını nasıl alırım?",
-      "a": "TikTok uygulamasını aç, videoyu bul, Paylaş simgesine dokun ve Bağlantıyı Kopyala'yı seç. URL artık panonuzda — yukarıdaki alana yapıştır ve İndir'e bas."
+      "a": "TikTok uygulamasını aç, videoyu bul, Paylaş simgesine dokun ve Bağlantıyı Kopyala'yı seç. URL artık panonuzda, yukarıdaki alana yapıştır ve İndir'e bas."
     },
     "q3": {
       "q": "İndirilen videolar cihazımda nereye kaydedilir?",
@@ -96,7 +96,7 @@
     },
     "q5": {
       "q": "Bir şey yüklemem veya hesap oluşturmam gerekiyor mu?",
-      "a": "Hayır. Clipzy tamamen tarayıcı tabanlıdır. Uzantı yok, uygulama yok, hesap gerekmez — sadece bağlantıyı yapıştır ve indir."
+      "a": "Hayır. Clipzy tamamen tarayıcı tabanlıdır. Uzantı yok, uygulama yok, hesap gerekmez, sadece bağlantıyı yapıştır ve indir."
     },
     "q6": {
       "q": "Clipzy tamamen ücretsiz mi?",
@@ -104,12 +104,12 @@
     }
   },
   "footer": {
-    "tagline": "Ücretsiz video indirici — filigransız, kayıtsız, zahmetsiz.",
+    "tagline": "Ücretsiz video indirici, filigransız, kayıtsız, zahmetsiz.",
     "copyright": "© 2025 Clipzy. Tüm hakları saklıdır."
   },
   "errors": {
     "invalidUrl": "Lütfen geçerli bir video URL'si girin.",
-    "unsupportedPlatform": "Desteklenmeyen platform. TikTok, YouTube, Instagram, Snapchat veya Pinterest'i deneyin.",
+    "unsupportedPlatform": "Desteklenmeyen platform. Destekleniyor: TikTok, YouTube, Instagram ve Pinterest.",
     "timeout": "İşlem zaman aşımına uğradı. Lütfen tekrar deneyin.",
     "failed": "İşlem başarısız. Lütfen tekrar deneyin.",
     "generic": "Video işlenemedi. Lütfen tekrar deneyin."

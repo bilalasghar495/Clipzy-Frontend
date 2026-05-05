@@ -8,7 +8,7 @@
     "badge": "100% Gratuito • Senza Filigrana • Senza Account",
     "title": "Scarica Video",
     "titleGrad": "Senza Filigrana",
-    "subtitle": "Incolla un link da TikTok, YouTube, Instagram o Snapchat. Il tuo video viene scaricato in pochi secondi — pulito, veloce e completamente gratuito.",
+    "subtitle": "Incolla un link da TikTok, YouTube, Instagram o Pinterest. Il tuo video viene scaricato in pochi secondi, pulito, veloce e completamente gratuito.",
     "step1": "Incolla il link",
     "step2": "Clicca scarica",
     "step3": "Salva il video"
@@ -35,23 +35,23 @@
   },
   "about": {
     "tag": "Informazioni su Clipzy",
-    "title1": "Scarica Video TikTok",
+    "title1": "Scarica Video",
     "titleGrad": "Senza Filigrana",
     "title2": "Gratuitamente",
-    "desc": "Clipzy è un downloader di video veloce basato su browser. Incolla qualsiasi link e il tuo video è pronto in pochi secondi — senza software, senza account, senza filigrana.",
+    "desc": "Clipzy è un downloader di video veloce basato su browser. Incolla qualsiasi link e il tuo video è pronto in pochi secondi, senza software, senza account, senza filigrana.",
     "keyFeatures": "Funzionalità principali",
-    "kf1": "Senza filigrana — scarica video TikTok in qualità originale senza alcun logo.",
+    "kf1": "Senza filigrana, scarica video da TikTok, YouTube, Instagram e Pinterest in qualità originale senza alcun logo.",
     "kf2": "Funziona su qualsiasi dispositivo: iPhone, Android, Windows, Mac o tablet.",
-    "kf3": "100% basato su browser — niente da installare o a cui iscriversi.",
+    "kf3": "100% basato su browser, niente da installare o a cui iscriversi.",
     "kf4": "Sempre gratuito. Un piccolo numero di annunci aiuta a mantenere il servizio.",
-    "kf5": "Altre piattaforme in arrivo: YouTube, Instagram, Snapchat e Pinterest."
+    "kf5": "Supporta TikTok, YouTube, Instagram e Pinterest, con altre piattaforme in arrivo."
   },
   "features": {
     "tag": "Perché Clipzy",
     "title": "Tutto ciò di cui hai bisogno, niente di più",
     "noWatermark": {
       "title": "Senza Filigrana",
-      "desc": "Scarica video TikTok nella loro qualità originale senza alcuna filigrana o logo — mai."
+      "desc": "Scarica video TikTok nella loro qualità originale senza alcuna filigrana o logo, mai."
     },
     "fast": {
       "title": "Velocissimo",
@@ -59,7 +59,7 @@
     },
     "devices": {
       "title": "Tutti i Dispositivi",
-      "desc": "Funziona su iPhone, Android, Windows e Mac — qualsiasi browser moderno, nessuna app richiesta."
+      "desc": "Funziona su iPhone, Android, Windows e Mac, qualsiasi browser moderno, nessuna app richiesta."
     },
     "free": {
       "title": "Sempre Gratuito",
@@ -84,7 +84,7 @@
     },
     "q2": {
       "q": "Come ottengo il link di un video TikTok?",
-      "a": "Apri l'app TikTok, trova il tuo video, tocca l'icona Condividi e scegli Copia link. L'URL è ora negli appunti — incollalo nel campo qui sopra e premi Scarica."
+      "a": "Apri l'app TikTok, trova il tuo video, tocca l'icona Condividi e scegli Copia link. L'URL è ora negli appunti, incollalo nel campo qui sopra e premi Scarica."
     },
     "q3": {
       "q": "Dove vengono salvati i video scaricati sul mio dispositivo?",
@@ -96,7 +96,7 @@
     },
     "q5": {
       "q": "Devo installare qualcosa o creare un account?",
-      "a": "No. Clipzy è interamente basato su browser. Nessuna estensione, nessuna app, nessun account richiesto — incolla il link e scarica."
+      "a": "No. Clipzy è interamente basato su browser. Nessuna estensione, nessuna app, nessun account richiesto, incolla il link e scarica."
     },
     "q6": {
       "q": "Clipzy è completamente gratuito?",
@@ -104,12 +104,12 @@
     }
   },
   "footer": {
-    "tagline": "Downloader video gratuito — senza filigrana, senza registrazione, senza complicazioni.",
+    "tagline": "Downloader video gratuito, senza filigrana, senza registrazione, senza complicazioni.",
     "copyright": "© 2025 Clipzy. Tutti i diritti riservati."
   },
   "errors": {
     "invalidUrl": "Inserisci un URL video valido.",
-    "unsupportedPlatform": "Piattaforma non supportata. Prova TikTok, YouTube, Instagram, Snapchat o Pinterest.",
+    "unsupportedPlatform": "Piattaforma non supportata. Supportate: TikTok, YouTube, Instagram e Pinterest.",
     "timeout": "Tempo di elaborazione scaduto. Riprova.",
     "failed": "Elaborazione fallita. Riprova.",
     "generic": "Impossibile elaborare il video. Riprova."

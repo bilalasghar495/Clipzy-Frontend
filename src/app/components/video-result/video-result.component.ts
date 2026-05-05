@@ -1,4 +1,12 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, inject } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  inject,
+  signal,
+} from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { VideoData } from '../../services/video-downloader.service';
 import { DownloadService } from '../../services/download.service';
@@ -19,13 +27,38 @@ export class VideoResultComponent {
   @Input() processed = false;
   @Output() reset = new EventEmitter<void>();
 
-  get platformLabel(): string {
-    const p = this.data?.platform ?? '';
-    return p.charAt(0).toUpperCase() + p.slice(1);
-  }
+  readonly copiedCaption = signal(false);
+  readonly copiedTags = signal(false);
 
   onDownload(): void {
     if (!this.data || !this.processed) return;
     this.dl.triggerBrowserDownload(this.data.jobId);
+  }
+
+  onDownloadThumbnail(): void {
+    if (!this.data?.thumbnail) return;
+    window.open(this.data.thumbnail, '_blank');
+  }
+
+  async onCopyCaption(): Promise<void> {
+    if (!this.data?.caption) return;
+    try {
+      await navigator.clipboard.writeText(this.data.caption);
+      this.copiedCaption.set(true);
+      setTimeout(() => this.copiedCaption.set(false), 2000);
+    } catch {
+      // clipboard write denied — user can copy manually
+    }
+  }
+
+  async onCopyTags(): Promise<void> {
+    if (!this.data?.tags?.length) return;
+    try {
+      await navigator.clipboard.writeText(this.data.tags.join(' '));
+      this.copiedTags.set(true);
+      setTimeout(() => this.copiedTags.set(false), 2000);
+    } catch {
+      // clipboard write denied — user can copy manually
+    }
   }
 }

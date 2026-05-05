@@ -8,7 +8,7 @@
     "badge": "100% Gratis • Tanpa Watermark • Tanpa Akun",
     "title": "Unduh Video",
     "titleGrad": "Tanpa Watermark",
-    "subtitle": "Tempel tautan dari TikTok, YouTube, Instagram, atau Snapchat. Video kamu diunduh dalam hitungan detik — bersih, cepat, dan sepenuhnya gratis.",
+    "subtitle": "Tempel tautan dari TikTok, YouTube, Instagram, atau Pinterest. Video kamu diunduh dalam hitungan detik, bersih, cepat, dan sepenuhnya gratis.",
     "step1": "Tempel tautan",
     "step2": "Klik unduh",
     "step3": "Simpan video"
@@ -35,23 +35,23 @@
   },
   "about": {
     "tag": "Tentang Clipzy",
-    "title1": "Unduh Video TikTok",
+    "title1": "Unduh Video",
     "titleGrad": "Tanpa Watermark",
     "title2": "Secara Gratis",
-    "desc": "Clipzy adalah pengunduh video cepat berbasis browser. Tempel tautan apa pun dan video kamu siap dalam hitungan detik — tanpa software, tanpa akun, tanpa watermark.",
+    "desc": "Clipzy adalah pengunduh video cepat berbasis browser. Tempel tautan apa pun dan video kamu siap dalam hitungan detik, tanpa software, tanpa akun, tanpa watermark.",
     "keyFeatures": "Fitur utama",
-    "kf1": "Tanpa watermark — unduh video TikTok dalam kualitas asli tanpa logo apa pun.",
+    "kf1": "Tanpa watermark, unduh video dari TikTok, YouTube, Instagram, dan Pinterest dalam kualitas asli tanpa logo apa pun.",
     "kf2": "Berfungsi di semua perangkat: iPhone, Android, Windows, Mac, atau tablet.",
-    "kf3": "100% berbasis browser — tidak perlu menginstal atau mendaftar apa pun.",
+    "kf3": "100% berbasis browser, tidak perlu menginstal atau mendaftar apa pun.",
     "kf4": "Selalu gratis. Sejumlah kecil iklan membantu menjaga layanan tetap berjalan.",
-    "kf5": "Platform lain segera hadir: YouTube, Instagram, Snapchat, dan Pinterest."
+    "kf5": "Mendukung TikTok, YouTube, Instagram, dan Pinterest, dengan platform lain segera hadir."
   },
   "features": {
     "tag": "Mengapa Clipzy",
     "title": "Semua yang Kamu Butuhkan, Tidak Lebih",
     "noWatermark": {
       "title": "Tanpa Watermark",
-      "desc": "Unduh video TikTok dalam kualitas aslinya tanpa watermark atau logo apa pun — selamanya."
+      "desc": "Unduh video TikTok dalam kualitas aslinya tanpa watermark atau logo apa pun, selamanya."
     },
     "fast": {
       "title": "Sangat Cepat",
@@ -59,7 +59,7 @@
     },
     "devices": {
       "title": "Semua Perangkat",
-      "desc": "Berfungsi di iPhone, Android, Windows, dan Mac — browser modern apa pun, tanpa aplikasi."
+      "desc": "Berfungsi di iPhone, Android, Windows, dan Mac, browser modern apa pun, tanpa aplikasi."
     },
     "free": {
       "title": "Selalu Gratis",
@@ -84,7 +84,7 @@
     },
     "q2": {
       "q": "Bagaimana cara mendapatkan tautan video TikTok?",
-      "a": "Buka aplikasi TikTok, temukan videonya, ketuk ikon Bagikan, dan pilih Salin Tautan. URL kini ada di clipboard kamu — tempel ke kolom di atas dan tekan Unduh."
+      "a": "Buka aplikasi TikTok, temukan videonya, ketuk ikon Bagikan, dan pilih Salin Tautan. URL kini ada di clipboard kamu, tempel ke kolom di atas dan tekan Unduh."
     },
     "q3": {
       "q": "Di mana video yang diunduh disimpan di perangkatku?",
@@ -96,7 +96,7 @@
     },
     "q5": {
       "q": "Apakah saya perlu menginstal sesuatu atau membuat akun?",
-      "a": "Tidak. Clipzy sepenuhnya berbasis browser. Tidak perlu ekstensi, aplikasi, atau akun — cukup tempel tautan dan unduh."
+      "a": "Tidak. Clipzy sepenuhnya berbasis browser. Tidak perlu ekstensi, aplikasi, atau akun, cukup tempel tautan dan unduh."
     },
     "q6": {
       "q": "Apakah Clipzy benar-benar gratis?",
@@ -104,12 +104,12 @@
     }
   },
   "footer": {
-    "tagline": "Pengunduh video gratis — tanpa watermark, tanpa daftar, tanpa ribet.",
+    "tagline": "Pengunduh video gratis, tanpa watermark, tanpa daftar, tanpa ribet.",
     "copyright": "© 2025 Clipzy. Hak cipta dilindungi."
   },
   "errors": {
     "invalidUrl": "Harap masukkan URL video yang valid.",
-    "unsupportedPlatform": "Platform tidak didukung. Coba TikTok, YouTube, Instagram, Snapchat, atau Pinterest.",
+    "unsupportedPlatform": "Platform tidak didukung. Didukung: TikTok, YouTube, Instagram, dan Pinterest.",
     "timeout": "Waktu pemrosesan habis. Silakan coba lagi.",
     "failed": "Pemrosesan gagal. Silakan coba lagi.",
     "generic": "Gagal memproses video. Silakan coba lagi."

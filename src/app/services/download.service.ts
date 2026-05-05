@@ -17,6 +17,10 @@ export interface ResultResponse {
   title: string;
   thumbnail: string;
   downloadUrl: string;
+  platform?: string;
+  duration?: string;
+  caption?: string;
+  tags?: string[];
 }
 
 @Injectable({ providedIn: 'root' })

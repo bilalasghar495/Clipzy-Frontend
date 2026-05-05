@@ -8,7 +8,7 @@
     "badge": "100% Gratuit • Sans Filigrane • Sans Compte",
     "title": "Téléchargez des Vidéos",
     "titleGrad": "Sans Filigrane",
-    "subtitle": "Collez un lien depuis TikTok, YouTube, Instagram ou Snapchat. Votre vidéo se télécharge en quelques secondes — propre, rapide et totalement gratuit.",
+    "subtitle": "Collez un lien depuis TikTok, YouTube, Instagram ou Pinterest. Votre vidéo se télécharge en quelques secondes, propre, rapide et totalement gratuit.",
     "step1": "Coller le lien",
     "step2": "Cliquer télécharger",
     "step3": "Enregistrer la vidéo"
@@ -35,23 +35,23 @@
   },
   "about": {
     "tag": "À propos de Clipzy",
-    "title1": "Téléchargez des Vidéos TikTok",
+    "title1": "Téléchargez des Vidéos",
     "titleGrad": "Sans Filigrane",
     "title2": "Gratuitement",
-    "desc": "Clipzy est un téléchargeur de vidéos rapide basé sur le navigateur. Collez n'importe quel lien et votre vidéo est prête en quelques secondes — sans logiciel, sans compte, sans filigrane.",
+    "desc": "Clipzy est un téléchargeur de vidéos rapide basé sur le navigateur. Collez n'importe quel lien et votre vidéo est prête en quelques secondes, sans logiciel, sans compte, sans filigrane.",
     "keyFeatures": "Fonctionnalités clés",
-    "kf1": "Sans filigrane — téléchargez des vidéos TikTok en qualité originale sans logo.",
+    "kf1": "Sans filigrane, téléchargez des vidéos de TikTok, YouTube, Instagram et Pinterest en qualité originale sans logo.",
     "kf2": "Fonctionne sur tous les appareils : iPhone, Android, Windows, Mac ou tablette.",
-    "kf3": "100% basé sur le navigateur — rien à installer ni à s'inscrire.",
+    "kf3": "100% basé sur le navigateur, rien à installer ni à s'inscrire.",
     "kf4": "Toujours gratuit. Quelques publicités aident à maintenir le service.",
-    "kf5": "D'autres plateformes arrivent : YouTube, Instagram, Snapchat et Pinterest."
+    "kf5": "Prend en charge TikTok, YouTube, Instagram et Pinterest, avec d'autres plateformes en chemin."
   },
   "features": {
     "tag": "Pourquoi Clipzy",
     "title": "Tout ce dont vous avez besoin, rien de plus",
     "noWatermark": {
       "title": "Sans Filigrane",
-      "desc": "Téléchargez des vidéos TikTok dans leur qualité originale sans aucun filigrane ni logo — jamais."
+      "desc": "Téléchargez des vidéos TikTok dans leur qualité originale sans aucun filigrane ni logo, jamais."
     },
     "fast": {
       "title": "Ultra Rapide",
@@ -59,7 +59,7 @@
     },
     "devices": {
       "title": "Tous les Appareils",
-      "desc": "Fonctionne sur iPhone, Android, Windows et Mac — n'importe quel navigateur moderne, sans application."
+      "desc": "Fonctionne sur iPhone, Android, Windows et Mac, n'importe quel navigateur moderne, sans application."
     },
     "free": {
       "title": "Toujours Gratuit",
@@ -84,7 +84,7 @@
     },
     "q2": {
       "q": "Comment obtenir le lien d'une vidéo TikTok ?",
-      "a": "Ouvrez l'application TikTok, trouvez votre vidéo, appuyez sur l'icône Partager et choisissez Copier le lien. L'URL est maintenant dans votre presse-papiers — collez-la dans le champ ci-dessus."
+      "a": "Ouvrez l'application TikTok, trouvez votre vidéo, appuyez sur l'icône Partager et choisissez Copier le lien. L'URL est maintenant dans votre presse-papiers, collez-la dans le champ ci-dessus."
     },
     "q3": {
       "q": "Où sont sauvegardées les vidéos téléchargées sur mon appareil ?",
@@ -96,7 +96,7 @@
     },
     "q5": {
       "q": "Dois-je installer quoi que ce soit ou créer un compte ?",
-      "a": "Non. Clipzy est entièrement basé sur le navigateur. Pas d'extensions, pas d'applications, pas de compte requis — collez simplement le lien et téléchargez."
+      "a": "Non. Clipzy est entièrement basé sur le navigateur. Pas d'extensions, pas d'applications, pas de compte requis, collez simplement le lien et téléchargez."
     },
     "q6": {
       "q": "Clipzy est-il totalement gratuit ?",
@@ -104,12 +104,12 @@
     }
   },
   "footer": {
-    "tagline": "Téléchargeur de vidéos gratuit — sans filigrane, sans inscription, sans tracas.",
+    "tagline": "Téléchargeur de vidéos gratuit, sans filigrane, sans inscription, sans tracas.",
     "copyright": "© 2025 Clipzy. Tous droits réservés."
   },
   "errors": {
     "invalidUrl": "Veuillez entrer une URL vidéo valide.",
-    "unsupportedPlatform": "Plateforme non supportée. Essayez TikTok, YouTube, Instagram, Snapchat ou Pinterest.",
+    "unsupportedPlatform": "Plateforme non supportée. Supportées : TikTok, YouTube, Instagram et Pinterest.",
     "timeout": "Délai de traitement dépassé. Veuillez réessayer.",
     "failed": "Traitement échoué. Veuillez réessayer.",
     "generic": "Impossible de traiter la vidéo. Veuillez réessayer."

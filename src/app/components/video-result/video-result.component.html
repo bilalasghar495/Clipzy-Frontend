@@ -14,7 +14,7 @@
   <div class="result-body">
 
     <!-- Thumbnail -->
-    <div class="thumb-wrap" aria-hidden="true">
+    <div class="thumb-wrap" [class.thumb-landscape]="data.platform === 'youtube'" aria-hidden="true">
       <img [src]="data.thumbnail" [alt]="data.title" loading="lazy" />
       <div class="thumb-overlay">
         <div class="thumb-play">
@@ -44,6 +44,16 @@
           </svg>
           {{ 'result.hdQuality' | translate }}
         </span>
+        @if (data.duration) {
+          <span class="meta-chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            {{ data.duration }}
+          </span>
+        }
       </div>
 
       <div class="result-actions">
@@ -58,6 +68,57 @@
           {{ 'result.download' | translate }}
         </button>
 
+        <div class="result-actions-secondary">
+          <button class="btn-secondary"
+                  type="button"
+                  (click)="onDownloadThumbnail()"
+                  [attr.aria-label]="'result.downloadThumbnail' | translate">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <circle cx="8.5" cy="8.5" r="1.5"/>
+              <polyline points="21 15 16 10 5 21"/>
+            </svg>
+            {{ 'result.downloadThumbnail' | translate }}
+          </button>
+
+          @if (data.caption) {
+            <button class="btn-secondary"
+                    type="button"
+                    (click)="onCopyCaption()"
+                    [attr.aria-label]="'result.copyCaption' | translate">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                @if (copiedCaption()) {
+                  <polyline points="20 6 9 17 4 12"/>
+                } @else {
+                  <rect x="9" y="9" width="13" height="13" rx="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                }
+              </svg>
+              {{ copiedCaption() ? ('result.copied' | translate) : ('result.copyCaption' | translate) }}
+            </button>
+          }
+
+          @if (data.tags?.length) {
+            <button class="btn-secondary"
+                    type="button"
+                    (click)="onCopyTags()"
+                    [attr.aria-label]="'result.copyTags' | translate">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                @if (copiedTags()) {
+                  <polyline points="20 6 9 17 4 12"/>
+                } @else {
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/>
+                  <line x1="7" y1="7" x2="7.01" y2="7"/>
+                }
+              </svg>
+              {{ copiedTags() ? ('result.copied' | translate) : ('result.copyTags' | translate) }}
+            </button>
+          }
+        </div>
+
         <button class="btn-reset" (click)="reset.emit()" type="button">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -70,5 +131,30 @@
     </div>
 
   </div>
+
+  <!-- Caption section (visible when available) -->
+  @if (data.caption) {
+    <div class="result-extras">
+      <div class="result-extra">
+        <p class="extra-label">{{ 'result.caption' | translate }}</p>
+        <p class="extra-text">{{ data.caption }}</p>
+      </div>
+    </div>
+  }
+
+  <!-- Tags section (visible when available) -->
+  @if (data.tags?.length) {
+    <div class="result-extras" [class.result-extras-no-top]="data.caption">
+      <div class="result-extra">
+        <p class="extra-label">{{ 'result.tags' | translate }}</p>
+        <div class="tags-wrap">
+          @for (tag of data.tags; track tag) {
+            <span class="tag-chip">{{ tag }}</span>
+          }
+        </div>
+      </div>
+    </div>
+  }
+
 </div>
 }
