@@ -1,0 +1,223 @@
+<main class="page">
+
+  <!-- ── Hero ────────────────────────────────────────────────────────────── -->
+  @if (!hasResult() && !loading()) {
+  <section class="hero" aria-label="Video downloader">
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-badge" role="note">
+      <span class="hero-badge-dot" aria-hidden="true"></span>
+      {{ 'hero.badge' | translate }}
+    </div>
+
+    <h1 class="hero-title">
+      {{ 'hero.title' | translate }}<br>
+      <span class="grad">{{ 'hero.titleGrad' | translate }}</span>
+    </h1>
+
+    <p class="hero-sub">{{ 'hero.subtitle' | translate }}</p>
+
+    <div class="how-steps" aria-label="How it works">
+      <div class="step">
+        <span class="step-num" aria-hidden="true">1</span>
+        <span>{{ 'hero.step1' | translate }}</span>
+      </div>
+      <span class="step-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </span>
+      <div class="step">
+        <span class="step-num" aria-hidden="true">2</span>
+        <span>{{ 'hero.step2' | translate }}</span>
+      </div>
+      <span class="step-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </span>
+      <div class="step">
+        <span class="step-num" aria-hidden="true">3</span>
+        <span>{{ 'hero.step3' | translate }}</span>
+      </div>
+    </div>
+
+    <!-- Input card -->
+    <div class="input-card">
+      <app-video-input [loading]="loading()" (process)="onProcess($event)"></app-video-input>
+
+      @if (error()) {
+        <div class="error-alert" role="alert" aria-live="assertive">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 8v4M12 16h.01"/>
+          </svg>
+          <span>{{ error()! | translate }}</span>
+        </div>
+      }
+    </div>
+
+    <!-- Supported platforms -->
+    <div class="platform-row" aria-label="Supported platforms">
+      @for (p of supported(); track p.name) {
+        <span class="platform-chip" [style.--c]="p.color">{{ p.name }}</span>
+      }
+    </div>
+  </section>
+  }
+
+  <!-- ── Result / Loader ─────────────────────────────────────────────────── -->
+  <section class="result-section" aria-live="polite">
+    @if (loading()) {
+      <app-loader [label]="loaderLabel()"></app-loader>
+    } @else if (hasResult()) {
+      <app-video-result
+        [data]="result()"
+        [processed]="hasResult()"
+        (reset)="onReset()">
+      </app-video-result>
+    }
+  </section>
+
+  <!-- ── About / How-to ─────────────────────────────────────────────────── -->
+  <section class="about-section" id="how-to" aria-labelledby="about-title">
+    <div class="about-inner">
+      <div class="section-tag">{{ 'about.tag' | translate }}</div>
+      <h2 class="section-title" id="about-title">
+        {{ 'about.title1' | translate }} <span class="grad">{{ 'about.titleGrad' | translate }}</span> {{ 'about.title2' | translate }}
+      </h2>
+      <p class="section-desc">{{ 'about.desc' | translate }}</p>
+
+      <div class="key-features-card">
+        <p class="kf-label">{{ 'about.keyFeatures' | translate }}</p>
+        <ul class="kf-list">
+          <li>{{ 'about.kf1' | translate }}</li>
+          <li>{{ 'about.kf2' | translate }}</li>
+          <li>{{ 'about.kf3' | translate }}</li>
+          <li>{{ 'about.kf4' | translate }}</li>
+          <li>{{ 'about.kf5' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Features grid ───────────────────────────────────────────────────── -->
+  <section class="features-section" id="features" aria-labelledby="features-title">
+    <div class="section-tag">{{ 'features.tag' | translate }}</div>
+    <h2 class="section-title" id="features-title">{{ 'features.title' | translate }}</h2>
+
+    <div class="features-grid">
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #6366F1; --ic-bg: #EEF2FF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2 4 6v6c0 5 3.4 9.3 8 10 4.6-.7 8-5 8-10V6l-8-4z"/>
+          </svg>
+        </div>
+        <h3>{{ 'features.noWatermark.title' | translate }}</h3>
+        <p>{{ 'features.noWatermark.desc' | translate }}</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #8B5CF6; --ic-bg: #F5F3FF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/>
+          </svg>
+        </div>
+        <h3>{{ 'features.fast.title' | translate }}</h3>
+        <p>{{ 'features.fast.desc' | translate }}</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #10B981; --ic-bg: #ECFDF5">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="5" y="2" width="14" height="20" rx="2"/>
+            <path d="M12 18h.01"/>
+          </svg>
+        </div>
+        <h3>{{ 'features.devices.title' | translate }}</h3>
+        <p>{{ 'features.devices.desc' | translate }}</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #F59E0B; --ic-bg: #FFFBEB">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 6v6l4 2"/>
+          </svg>
+        </div>
+        <h3>{{ 'features.free.title' | translate }}</h3>
+        <p>{{ 'features.free.desc' | translate }}</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #EF4444; --ic-bg: #FEF2F2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <h3>{{ 'features.noAccount.title' | translate }}</h3>
+        <p>{{ 'features.noAccount.desc' | translate }}</p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon" style="--ic: #06B6D4; --ic-bg: #ECFEFF">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+          </svg>
+        </div>
+        <h3>{{ 'features.hdQuality.title' | translate }}</h3>
+        <p>{{ 'features.hdQuality.desc' | translate }}</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ── FAQ ─────────────────────────────────────────────────────────────── -->
+  <section class="faq-section" id="faq" aria-labelledby="faq-title">
+    <div class="section-tag">{{ 'faq.tag' | translate }}</div>
+    <h2 class="section-title" id="faq-title">
+      {{ 'faq.title' | translate }} <span class="grad">{{ 'faq.titleGrad' | translate }}</span>
+    </h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>{{ 'faq.q1.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q1.a' | translate }}</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary>{{ 'faq.q2.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q2.a' | translate }}</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary>{{ 'faq.q3.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q3.a' | translate }}</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary>{{ 'faq.q4.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q4.a' | translate }}</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary>{{ 'faq.q5.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q5.a' | translate }}</p></div>
+      </details>
+
+      <details class="faq-item">
+        <summary>{{ 'faq.q6.q' | translate }}</summary>
+        <div class="faq-body"><p>{{ 'faq.q6.a' | translate }}</p></div>
+      </details>
+    </div>
+  </section>
+
+</main>

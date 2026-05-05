@@ -1,0 +1,90 @@
+:host { display: block; }
+
+.inner-page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 80px 24px 100px;
+}
+
+.page-header { margin-bottom: 48px; }
+
+.page-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--primary);
+  background: var(--primary-light);
+  border-radius: 999px;
+  padding: 5px 14px;
+  margin-bottom: 16px;
+}
+
+.page-title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 900;
+  letter-spacing: -.03em;
+  line-height: 1.1;
+  color: var(--text);
+  margin: 0 0 12px;
+}
+
+.grad {
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.page-meta {
+  font-size: 13px;
+  color: var(--text-faint);
+  margin: 0;
+}
+
+/* ── Prose ───────────────────────────────────────────────────────────────── */
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  p {
+    font-size: 15px;
+    color: var(--text-dim);
+    line-height: 1.8;
+    margin: 0 0 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -.015em;
+    margin: 36px 0 12px;
+  }
+
+  ul {
+    margin: 0 0 20px;
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    li {
+      font-size: 15px;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+  }
+
+  strong { color: var(--text); font-weight: 600; }
+}
+
+.inline-link {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover { color: var(--primary-dark); }
+}
