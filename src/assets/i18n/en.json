@@ -113,6 +113,11 @@
     "tagline": "Free video downloader, no watermark, no signup, no fuss.",
     "copyright": "© 2025 Clipzy. All rights reserved."
   },
+  "recent": {
+    "title": "Recently Downloaded",
+    "clear": "Clear history",
+    "downloadAgain": "Download Again"
+  },
   "errors": {
     "invalidUrl": "Please enter a valid video URL.",
     "unsupportedPlatform": "Unsupported platform. Supported: TikTok, YouTube, Instagram, and Pinterest.",

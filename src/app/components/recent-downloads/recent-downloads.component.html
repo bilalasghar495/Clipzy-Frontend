@@ -1,0 +1,70 @@
+<section class="recent-section">
+
+  <div class="recent-header">
+    <div class="recent-title-group">
+      <h2 class="recent-title">{{ 'recent.title' | translate }}</h2>
+      <span class="info-icon" aria-label="History is cleared after 24 hours">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="8.01"/>
+          <line x1="12" y1="12" x2="12" y2="16"/>
+        </svg>
+        <span class="info-tooltip">History clears automatically after 24 hours</span>
+      </span>
+    </div>
+    <button class="clear-btn" (click)="onClear()">{{ 'recent.clear' | translate }}</button>
+  </div>
+
+  <div class="divider"></div>
+
+  @if (items().length) {
+    <ul class="recent-list" role="list">
+      @for (item of items(); track item.jobId) {
+        <li class="recent-item" role="listitem">
+
+          <!-- Thumbnail -->
+          <div class="item-avatar" [style.border-color]="platformColor(item.platform) + '44'">
+            <img [src]="thumbnailSrc(item)" [alt]="item.title" loading="lazy"
+                 (error)="$any($event.target).style.display='none'; $any($event.target).nextElementSibling.style.display='flex'">
+            <span class="item-avatar-fallback"
+                  [style.background]="platformColor(item.platform) + '22'"
+                  [style.color]="platformColor(item.platform)">
+              {{ platformInitials(item.platform) }}
+            </span>
+          </div>
+
+          <!-- Text -->
+          <div class="item-body">
+            <div class="item-top">
+              <span class="item-title">{{ item.title }}</span>
+              <span class="item-time">{{ timeAgo(item.downloadedAt) }}</span>
+            </div>
+            <div class="item-sub">
+              <app-platform-badge [platform]="item.platform" [iconOnly]="true" class="icon-only-badge"></app-platform-badge>
+              <button class="dl-icon-btn" (click)="onDownloadAgain(item)" title="Download again">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                  <polyline points="7 10 12 15 17 10"/>
+                  <line x1="12" y1="15" x2="12" y2="3"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </li>
+      }
+    </ul>
+  } @else {
+    <div class="empty-state">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+           stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="12 6 12 12 16 14"/>
+      </svg>
+      <p>No history yet</p>
+    </div>
+  }
+
+</section>

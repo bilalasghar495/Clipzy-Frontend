@@ -2,6 +2,7 @@ import { DestroyRef, Injectable, inject, signal } from '@angular/core';
 import { Subscription, race, throwError, timer } from 'rxjs';
 import { last, switchMap, takeWhile, tap } from 'rxjs/operators';
 import { DownloadService } from './download.service';
+import { RecentDownloadsService } from './recent-downloads.service';
 
 export type JobStatus = 'idle' | 'waiting' | 'processing' | 'completed' | 'failed';
 
@@ -27,6 +28,7 @@ export interface VideoData {
 @Injectable({ providedIn: 'root' })
 export class VideoDownloaderService {
   private readonly dl = inject(DownloadService);
+  private readonly recent = inject(RecentDownloadsService);
   private readonly destroyRef = inject(DestroyRef);
 
   private pollSub?: Subscription;
@@ -107,7 +109,7 @@ export class VideoDownloaderService {
 
     this.pollSub = race(job$, timeout$).subscribe({
       next: result => {
-        this.result.set({
+        const video = {
           jobId: this.pendingJobId,
           platform: this.pendingPlatform,
           title: result.title,
@@ -116,7 +118,9 @@ export class VideoDownloaderService {
           duration: result.duration,
           caption: result.caption,
           tags: result.tags,
-        });
+        };
+        this.result.set(video);
+        this.recent.add(video);
         this.loading.set(false);
         this.jobStatus.set('completed');
       },

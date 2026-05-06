@@ -40,6 +40,10 @@ export class DownloadService {
     return this.http.get<ResultResponse>(`${this.apiUrl}/result/${jobId}`);
   }
 
+  thumbnailProxyUrl(url: string): string {
+    return `${this.apiUrl}/thumbnail-proxy?url=${encodeURIComponent(url)}`;
+  }
+
   triggerBrowserDownload(jobId: string): void {
     window.open(`${this.apiUrl}/file/${jobId}`, '_blank');
   }

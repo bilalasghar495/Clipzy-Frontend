@@ -66,7 +66,15 @@
         <span class="platform-chip" [style.--c]="p.color">{{ p.name }}</span>
       }
     </div>
+
   </section>
+
+  <!-- ── Recent downloads (below hero, in normal flow) ─────────────────── -->
+  @if (recentItems().length) {
+    <section class="history-section" aria-label="Recent downloads">
+      <app-recent-downloads></app-recent-downloads>
+    </section>
+  }
   }
 
   <!-- ── Result / Loader ─────────────────────────────────────────────────── -->

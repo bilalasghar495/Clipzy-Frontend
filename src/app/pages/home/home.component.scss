@@ -69,6 +69,13 @@
   animation: fadeUp .55s cubic-bezier(.22,1,.36,1) both;
 }
 
+/* ── Recent downloads section (below hero, in flow) ─────────────────────── */
+.history-section {
+  padding: 40px 0 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
 .hero-glow {
   position: absolute;
   top: -100px;
@@ -215,6 +222,7 @@
 
   &:hover { transform: translateY(-1px); }
 }
+
 
 /* ── Result section ──────────────────────────────────────────────────────── */
 .result-section {

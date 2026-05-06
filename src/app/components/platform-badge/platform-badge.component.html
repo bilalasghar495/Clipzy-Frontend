@@ -62,5 +62,7 @@
 
     }
   </span>
-  <span class="label">{{ meta.label }}</span>
+  @if (!iconOnly) {
+    <span class="label">{{ meta.label }}</span>
+  }
 </span>

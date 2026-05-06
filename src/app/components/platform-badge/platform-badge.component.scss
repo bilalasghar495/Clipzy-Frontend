@@ -30,3 +30,8 @@
 .label {
   line-height: 1;
 }
+
+/* Icon-only pill — tighter padding, no label space */
+:host-context(.icon-only-badge) .badge {
+  padding: 5px;
+}
