@@ -29,6 +29,20 @@ export class VideoResultComponent {
 
   readonly copiedCaption = signal(false);
   readonly copiedTags = signal(false);
+  readonly thumbnailFailed = signal(false);
+
+  effectiveThumbnail(): string {
+    const url = this.data?.thumbnail;
+    if (!url) return '';
+    if (/fbcdn\.net|cdninstagram\.com/.test(url)) {
+      return this.dl.thumbnailProxyUrl(url);
+    }
+    return url;
+  }
+
+  onThumbnailError(): void {
+    this.thumbnailFailed.set(true);
+  }
 
   onDownload(): void {
     if (!this.data || !this.processed) return;

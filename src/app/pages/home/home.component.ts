@@ -4,17 +4,22 @@ import { VideoDownloaderService } from '../../services/video-downloader.service'
 import { VideoInputComponent } from '../../components/video-input/video-input.component';
 import { VideoResultComponent } from '../../components/video-result/video-result.component';
 import { LoaderComponent } from '../../components/loader/loader.component';
+import { RecentDownloadsComponent } from '../../components/recent-downloads/recent-downloads.component';
+import { RecentDownloadsService } from '../../services/recent-downloads.service';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TranslateModule, VideoInputComponent, VideoResultComponent, LoaderComponent],
+  imports: [TranslateModule, VideoInputComponent, VideoResultComponent, LoaderComponent, RecentDownloadsComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
   private readonly svc = inject(VideoDownloaderService);
+  private readonly recentSvc = inject(RecentDownloadsService);
+
+  readonly recentItems = this.recentSvc.items;
 
   readonly loading = this.svc.loading;
   readonly result = this.svc.result;

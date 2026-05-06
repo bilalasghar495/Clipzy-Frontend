@@ -12,6 +12,7 @@ import { PLATFORM_CONFIG, PlatformConfig } from '../../config/platform.config';
 })
 export class PlatformBadgeComponent {
   @Input({ required: true }) platform!: Platform;
+  @Input() iconOnly = false;
 
   get meta(): PlatformConfig {
     return PLATFORM_CONFIG[this.platform] ?? PLATFORM_CONFIG['unknown'];
