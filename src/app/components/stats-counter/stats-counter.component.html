@@ -1,0 +1,46 @@
+<div class="stats-strip" [class.is-loaded]="loaded()" aria-label="Live usage statistics">
+
+  <span class="live-pill" aria-label="Live data">
+    <span class="live-dot" aria-hidden="true"></span>
+    Live
+  </span>
+
+  <div class="stats-row">
+
+    <!-- Downloads -->
+    <div class="stat" [attr.aria-label]="'Total downloads: ' + displayDownloads()">
+      <div class="stat-icon dl-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 15V3"/>
+          <path d="M7 10l5 5 5-5"/>
+          <rect x="3" y="17" width="18" height="4" rx="2"/>
+        </svg>
+      </div>
+      <div class="stat-body">
+        <span class="stat-number">{{ displayDownloads() }}</span>
+        <span class="stat-label">Downloads</span>
+      </div>
+    </div>
+
+    <div class="stat-sep" aria-hidden="true"></div>
+
+    <!-- Unique users -->
+    <div class="stat" [attr.aria-label]="'Unique users: ' + displayUsers()">
+      <div class="stat-icon users-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="9" cy="7" r="4"/>
+          <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          <path d="M21 21v-2a4 4 0 0 0-3-3.87"/>
+        </svg>
+      </div>
+      <div class="stat-body">
+        <span class="stat-number">{{ displayUsers() }}</span>
+        <span class="stat-label">Unique Users</span>
+      </div>
+    </div>
+
+  </div>
+</div>

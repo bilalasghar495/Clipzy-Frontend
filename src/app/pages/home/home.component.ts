@@ -6,11 +6,12 @@ import { VideoResultComponent } from '../../components/video-result/video-result
 import { LoaderComponent } from '../../components/loader/loader.component';
 import { RecentDownloadsComponent } from '../../components/recent-downloads/recent-downloads.component';
 import { RecentDownloadsService } from '../../services/recent-downloads.service';
+import { StatsCounterComponent } from '../../components/stats-counter/stats-counter.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TranslateModule, VideoInputComponent, VideoResultComponent, LoaderComponent, RecentDownloadsComponent],
+  imports: [TranslateModule, VideoInputComponent, VideoResultComponent, LoaderComponent, RecentDownloadsComponent, StatsCounterComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
